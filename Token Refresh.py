@@ -68,5 +68,3 @@ def fetch_activities():
     # Placeholder for making requests to fetch activities with access_token
     print("Access token:", access_token)
 
-# Example usage
-fetch_activities()
