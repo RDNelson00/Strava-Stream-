@@ -19,8 +19,8 @@ if not client_id or not client_secret or not auth_code:
 # File to store the access token and refresh token
 token_file = "strava_tokens.json"
 
-# Refresh token function
-def refresh_access_token():
+# Get access and refresh tokens
+def get_tokens():
     global auth_code
 
     # Endpoint for refreshing the token
@@ -53,24 +53,5 @@ def refresh_access_token():
         raise Exception("Failed to refresh token:", data)
 
 
-# Function to fetch activities
-def fetch_activities():
-    # Try loading the last saved access token
-    try:
-        with open(token_file) as f:
-            tokens = json.load(f)
-            access_token = tokens.get('access_token')
-            # Additional code to use the access_token to fetch activities would go here
-            
-    except FileNotFoundError:
-        print("Token file not found. Refreshing access token.")
-        access_token = refresh_access_token()
-    
-    # Placeholder for making requests to fetch activities with access_token
-    print("Access token:", access_token)
-
 # Refresh the access token
 access_token = refresh_access_token()
-
-# Fetch activities (or do something with the access token if needed)
-fetch_activities()
