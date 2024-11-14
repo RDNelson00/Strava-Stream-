@@ -30,27 +30,28 @@ def refresh_access_token():
     payload = {
         'client_id': client_id,
         'client_secret': client_secret,
-        'grant_type': "authorization_code"
-        ,'auth_code': auth_code
+        'grant_type': "authorization_code",
+        'code': auth_code  # Correct parameter is 'code'
     }
-
+    
     # Make the POST request to refresh the token
     response = requests.post(token_url, data=payload)
     data = response.json()
+    print("Response status code:", response.status_code)  # Print response code
+    print("Response JSON data:", data)                    # Print response JSON data
 
     # Check if request was successful
     if response.status_code == 200:
         # Update the tokens and save them
         access_token = data['access_token']
-        auth_code = data['auth_code']
         
         # Save the tokens as JSON
         with open(token_file, 'w') as f:
             json.dump(data, f)  # Correctly save data in JSON format
-
         return access_token
     else:
         raise Exception("Failed to refresh token:", data)
+
 
 # Function to fetch activities
 def fetch_activities():
@@ -68,3 +69,8 @@ def fetch_activities():
     # Placeholder for making requests to fetch activities with access_token
     print("Access token:", access_token)
 
+# Refresh the access token
+access_token = refresh_access_token()
+
+# Fetch activities (or do something with the access token if needed)
+fetch_activities()
