@@ -20,7 +20,7 @@ if not client_id or not client_secret or not auth_code:
 token_file = "strava_tokens.json"
 
 # Refresh token function
-def refresh_access_token():
+def get_token():
     global auth_code
 
     # Endpoint for refreshing the token
@@ -30,41 +30,33 @@ def refresh_access_token():
     payload = {
         'client_id': client_id,
         'client_secret': client_secret,
-        'grant_type': "authorization_code"
-        ,'auth_code': auth_code
+        'grant_type': "authorization_code",
+        'code': auth_code  
     }
-
+    
     # Make the POST request to refresh the token
     response = requests.post(token_url, data=payload)
     data = response.json()
+    print("Response status code:", response.status_code)  # Print response code
+    print("Response JSON data:", data)                    # Print response JSON data
 
     # Check if request was successful
     if response.status_code == 200:
         # Update the tokens and save them
         access_token = data['access_token']
-        auth_code = data['auth_code']
-        
+       
+        # Add the current time as issued_at
+        issued_at = int(time.time())  # Get the current Unix timestamp
+
+        # Add issued_at to the data
+        data['issued_at'] = issued_at
+
         # Save the tokens as JSON
         with open(token_file, 'w') as f:
             json.dump(data, f)  # Correctly save data in JSON format
-
         return access_token
     else:
         raise Exception("Failed to refresh token:", data)
 
-# Function to fetch activities
-def fetch_activities():
-    # Try loading the last saved access token
-    try:
-        with open(token_file) as f:
-            tokens = json.load(f)
-            access_token = tokens.get('access_token')
-            # Additional code to use the access_token to fetch activities would go here
-            
-    except FileNotFoundError:
-        print("Token file not found. Refreshing access token.")
-        access_token = refresh_access_token()
-    
-    # Placeholder for making requests to fetch activities with access_token
-    print("Access token:", access_token)
-
+# get the access token
+get_token()

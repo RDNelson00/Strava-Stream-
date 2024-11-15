@@ -1,9 +1,32 @@
 import requests
 import time  # Optional for rate limits
 import pandas as pd
-# Replace with your access token
-access_token = "9938f3180a3ee5f538e4b1a76456023e18631c82"
+import json
+from dotenv import load_dotenv
 
+token_file = 'strava_tokens.json'
+ 
+def get_access_token():
+    try:
+        with open(token_file, 'r') as f:
+            tokens = json.load(f)
+            access_token = tokens.get('access_token')  # Extract the access token
+            if access_token:
+                return access_token
+            else:
+                print("Access token not found in the file.")
+                return None
+    except FileNotFoundError:
+        print(f"{token_file} not found. Please ensure the file exists.")
+        return None
+
+# Example usage: Accessing the token
+access_token = get_access_token()
+
+if access_token:
+    print("Access token retrieved:", access_token)
+else:
+    print("No access token found or file error.")
 
 
 # Define the endpoint URL for fetching activities
