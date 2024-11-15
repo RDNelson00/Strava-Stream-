@@ -29,10 +29,6 @@ def generate_auth_url():
     auth_url = f"{base_url}?{urlencode(params)}"
     return auth_url
 
-
-
-
-
 # Step 2: Redirect user to Strava authorization URL
 def redirect_user_to_strava():
     auth_url = generate_auth_url()
