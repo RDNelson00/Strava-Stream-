@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env
 load_dotenv()
 
-
+#set environment variables to local variables
 client_id = os.getenv("client_id")
 client_secret = os.getenv("client_secret")
 auth_code = os.getenv("auth_code")
@@ -19,9 +19,17 @@ if not client_id or not client_secret or not auth_code:
 # File to store the access token and refresh token
 token_file = "strava_tokens.json"
 
-# Refresh token function
-def refresh_access_token():
-    global auth_code
+
+
+def get_refresh_token():
+    with open(token_file, 'r') as f:
+        tokens = json.load(f)
+        return tokens.get('refresh_token')  # Extract the refresh token
+
+refresh_token = get_refresh_token()
+
+# Get the new access token using the refresh token
+def get_token():
 
     # Endpoint for refreshing the token
     token_url = "https://www.strava.com/oauth/token"
@@ -30,8 +38,8 @@ def refresh_access_token():
     payload = {
         'client_id': client_id,
         'client_secret': client_secret,
-        'grant_type': "authorization_code",
-        'code': auth_code  # Correct parameter is 'code'
+        'grant_type': "refresh_token",
+        'refresh_token':   refresh_token
     }
     
     # Make the POST request to refresh the token
@@ -54,4 +62,4 @@ def refresh_access_token():
 
 
 # Refresh the access token
-access_token = refresh_access_token()
+get_token()

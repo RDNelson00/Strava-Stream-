@@ -19,8 +19,8 @@ if not client_id or not client_secret or not auth_code:
 # File to store the access token and refresh token
 token_file = "strava_tokens.json"
 
-# Get access and refresh tokens
-def get_tokens():
+# Refresh token function
+def get_token():
     global auth_code
 
     # Endpoint for refreshing the token
@@ -31,7 +31,7 @@ def get_tokens():
         'client_id': client_id,
         'client_secret': client_secret,
         'grant_type': "authorization_code",
-        'code': auth_code  # Correct parameter is 'code'
+        'code': auth_code  
     }
     
     # Make the POST request to refresh the token
@@ -53,5 +53,5 @@ def get_tokens():
         raise Exception("Failed to refresh token:", data)
 
 
-# Refresh the access token
-access_token = refresh_access_token()
+# get the access token
+get_token()
