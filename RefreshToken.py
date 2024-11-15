@@ -53,6 +53,12 @@ def get_token():
         # Update the tokens and save them
         access_token = data['access_token']
         
+        # Add the current time as issued_at
+        issued_at = int(time.time())  # Get the current Unix timestamp
+
+        # Add issued_at to the data
+        data['issued_at'] = issued_at
+
         # Save the tokens as JSON
         with open(token_file, 'w') as f:
             json.dump(data, f)  # Correctly save data in JSON format

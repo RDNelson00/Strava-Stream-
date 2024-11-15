@@ -22,6 +22,7 @@ def get_access_token():
 
 # Example usage: Accessing the token
 access_token = get_access_token()
+
 if access_token:
     print("Access token retrieved:", access_token)
 else:
