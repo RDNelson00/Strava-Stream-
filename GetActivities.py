@@ -65,16 +65,10 @@ def fetch_activities(access_token, activities_url, per_page=30, after=None):
             save_last_fetched_timestamp(most_recent_timestamp)
 
         elif response.status_code == 429:  # Rate limit error
-            reset_time = response.headers.get('X-RateLimit-Reset')
-            if reset_time:
-                reset_time = int(reset_time)  # Convert to integer
-                wait_time = reset_time - time.time()
-                print(f"Rate limit exceeded, waiting for {wait_time} seconds.")
-                time.sleep(wait_time)  # Sleep until the rate limit resets
-            else:
-                print("Rate limit exceeded, but no reset time found. Retrying...")
-                time.sleep(60)  # Wait for 1 minute before retrying
-
+            print ("Rate limit exceeded. Saving activities.")
+            break
+          
+          
         else:
             print("Error fetching activities:", response.json())
             break
