@@ -5,8 +5,11 @@ import json
 from dotenv import load_dotenv
 
 token_file = 'strava_tokens.json'
- test test
+activities_url = "https://www.strava.com/api/v3/athlete/activities"
+last_fetched_file = 'last_fetched.json'  # File to store the timestamp of the last fetched activity
+
 def get_access_token():
+    """Retrieve the Strava API access token from a file."""
     try:
         with open(token_file, 'r') as f:
             tokens = json.load(f)
@@ -20,69 +23,89 @@ def get_access_token():
         print(f"{token_file} not found. Please ensure the file exists.")
         return None
 
-# Example usage: Accessing the token
-access_token = get_access_token()
+def get_last_fetched_timestamp():
+    """Retrieve the timestamp of the last fetched activity."""
+    try:
+        with open(last_fetched_file, 'r') as f:
+            data = json.load(f)
+            return data.get('last_fetched_timestamp')
+    except FileNotFoundError:
+        # If the file doesn't exist, return None (meaning start from the beginning)
+        return None
 
-if access_token:
-    print("Access token retrieved:", access_token)
-else:
-    print("No access token found or file error.")
+def save_last_fetched_timestamp(timestamp):
+    """Save the timestamp of the last fetched activity."""
+    with open(last_fetched_file, 'w') as f:
+        json.dump({'last_fetched_timestamp': timestamp}, f)
 
+def fetch_activities(access_token, activities_url, per_page=30, after=None):
+    """Fetch activities from the Strava API with pagination and filter by timestamp."""
+    all_activities = []
+    page = 1
+    headers = {"Authorization": f"Bearer {access_token}"}
+    params = {"page": page, "per_page": per_page}
+    
+    if after:
+        params["after"] = after  # Only fetch activities after the specified timestamp
 
-# Define the endpoint URL for fetching activities
-activities_url = "https://www.strava.com/api/v3/athlete/activities"
+    while True:
+        response = requests.get(activities_url, headers=headers, params=params)
 
-# Headers with the access token for authentication
-headers = {
-    "Authorization": f"Bearer {access_token}"
-}
+        if response.status_code == 200:
+            activities = response.json()
+            if not activities:  # No more activities to fetch
+                break
+            all_activities.extend(activities)
+            print(f"Fetched page {page}, retrieved {len(activities)} activities")
+            page += 1
 
-# Initialize a list to store all activities and set the first page
-all_activities = []
-page = 1
+            # Update 'after' to the timestamp of the most recent activity
+            most_recent_activity = activities[-1]
+            most_recent_timestamp = most_recent_activity['start_date']  # Example timestamp
+            save_last_fetched_timestamp(most_recent_timestamp)
 
-# Loop to keep fetching activities until no more are returned
-while True:
-    # Request parameters for pagination
-    params = {
-        "page": page,
-        "per_page": 30  # The maximum allowed per request
-    }
+        elif response.status_code == 429:  # Rate limit error
+            reset_time = response.headers.get('X-RateLimit-Reset')
+            if reset_time:
+                reset_time = int(reset_time)  # Convert to integer
+                wait_time = reset_time - time.time()
+                print(f"Rate limit exceeded, waiting for {wait_time} seconds.")
+                time.sleep(wait_time)  # Sleep until the rate limit resets
+            else:
+                print("Rate limit exceeded, but no reset time found. Retrying...")
+                time.sleep(60)  # Wait for 1 minute before retrying
 
-    # Make the API request to fetch activities for the current page
-    response = requests.get(activities_url, headers=headers, params=params)
-
-    # Check if the request was successful
-    if response.status_code == 200:
-        activities = response.json()
-
-        # Break if no more activities are returned
-        if not activities:
+        else:
+            print("Error fetching activities:", response.json())
             break
 
-        # Add the current page of activities to the full list
-        all_activities.extend(activities)
+    print(f"Total activities retrieved: {len(all_activities)}")
+    return all_activities
 
-        # Print progress (optional)
-        print(f"Fetched page {page}, retrieved {len(activities)} activities")
+def save_activities_to_csv(activities, filename="strava_activities.csv"):
+    """Save activities to a CSV file."""
+    activities_df = pd.DataFrame(activities)
+    activities_df.to_csv(filename, index=False)
+    print(f"Activities saved to {filename}")
 
-        # Increment to fetch the next page
-        page += 1
+def main():
+    # Get the access token
+    access_token = get_access_token()
 
-        # Optional: Small delay to avoid rate limiting
-        time.sleep(1)
+    if access_token:
+        print("Access token retrieved:", access_token)
+
+        # Get the timestamp of the last fetched activity (if any)
+        last_fetched_timestamp = get_last_fetched_timestamp()
+        print(f"Last fetched timestamp: {last_fetched_timestamp}")
+
+        # Fetch activities incrementally
+        activities = fetch_activities(access_token, activities_url, after=last_fetched_timestamp)
+
+        # Save activities to CSV
+        save_activities_to_csv(activities)
     else:
-        print("Error fetching activities:", response.json())
-        break
+        print("No access token found or file error.")
 
-# Display the total number of activities fetched
-print(f"Total activities retrieved: {len(all_activities)}")
-
-
-# Convert the list of activities to a pandas DataFrame
-activities_df = pd.DataFrame(all_activities)
-
-# Save the DataFrame to a CSV file
-activities_df.to_csv("strava_activities.csv", index=False)
-
-print("Activities saved to strava_activities.csv")
+if __name__ == "__main__":
+    main()
