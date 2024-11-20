@@ -1,12 +1,16 @@
 import requests
-import time  # Optional for rate limits
+from datetime import datetime
 import pandas as pd
 import json
 from dotenv import load_dotenv
+import os
 
-token_file = 'strava_tokens.json'
- 
+token_file = 'strava_tokens.json' 
+activities_url = "https://www.strava.com/api/v3/athlete/activities"
+last_fetched_file = 'last_fetched.json'  # File to store the timestamp of the last fetched activity
+
 def get_access_token():
+    """Retrieve the Strava API access token from a file."""
     try:
         with open(token_file, 'r') as f:
             tokens = json.load(f)
@@ -20,69 +24,139 @@ def get_access_token():
         print(f"{token_file} not found. Please ensure the file exists.")
         return None
 
-# Example usage: Accessing the token
-access_token = get_access_token()
+def get_last_fetched_datetime():
+    """Retrieve the timestamp of the last fetched activity."""
+    try:
+        with open(last_fetched_file, 'r') as f:
+            data = json.load(f)
+            return data.get('last_fetched_epoch')
+    except:
+        # If the file doesn't exist, return None (meaning start from the beginning)
+        return None
 
-if access_token:
-    print("Access token retrieved:", access_token)
-else:
-    print("No access token found or file error.")
-
-
-# Define the endpoint URL for fetching activities
-activities_url = "https://www.strava.com/api/v3/athlete/activities"
-
-# Headers with the access token for authentication
-headers = {
-    "Authorization": f"Bearer {access_token}"
-}
-
-# Initialize a list to store all activities and set the first page
-all_activities = []
-page = 1
-
-# Loop to keep fetching activities until no more are returned
-while True:
-    # Request parameters for pagination
-    params = {
-        "page": page,
-        "per_page": 30  # The maximum allowed per request
+def save_last_fetched_datetime(timestamp): 
+    """Save the timestamp of the last fetched activity as date/time and epoch."""
+    
+    # Convert timestamp string to datetime object, handling the 'T' and 'Z' format
+    timestamp_dt = datetime.strptime(timestamp.replace("Z", ""), "%Y-%m-%dT%H:%M:%S")
+    
+    # Convert datetime to epoch time
+    epoch_time = int(timestamp_dt.timestamp())
+    
+    # Create a dictionary with both datetime and epoch
+    data = {
+        'last_fetched_datetime': timestamp,
+        'last_fetched_epoch': epoch_time
     }
 
-    # Make the API request to fetch activities for the current page
-    response = requests.get(activities_url, headers=headers, params=params)
+    # Save both the datetime and epoch to the file
+    with open(last_fetched_file, 'w') as f:
+        json.dump(data, f)
 
-    # Check if the request was successful
-    if response.status_code == 200:
-        activities = response.json()
+    print(f"Saved last fetched datetime and epoch: {data}")
 
-        # Break if no more activities are returned
-        if not activities:
+def save_activities_to_csv(activities, filename="strava_activities.csv"):
+    """Save activities to a CSV file."""
+    #first see how many records exist in the file
+    try:
+        df = pd.read_csv(filename)
+        row_count = len(df)
+        print("Number of records:", row_count)    
+    except:
+        print ("Activities file not found")
+
+    # Check if the file exists and whether it is empty or not
+    if not os.path.isfile(filename):
+        # If the file doesn't exist, create it and write the activities with headers
+        print ("Activities file does not exist, writing new file")
+        activities_df = pd.DataFrame(activities)
+        activities_df.to_csv(filename, index=False, mode='w', header=True)
+        print(f"Created new file and saved activities to {filename}")
+    
+    else:
+        # If the file exists and is not empty, append without headers
+        print ("Activities file exists with data, appending w/o headers")
+        os.chmod(filename, 0o644)  # Make the file writable
+        activities_df = pd.DataFrame(activities)
+        activities_df.to_csv(filename, index=False, mode='a', header=False)
+        print(f"Appended activities to {filename}")
+
+    # After saving, make the file read-only
+    os.chmod(filename, 0o444)  # Read-only permission for the file (Owner, Group, Others)
+
+
+
+def fetch_activities(access_token, activities_url, per_page=200, after=None):
+    """Fetch activities from the Strava API with pagination and filter by timestamp."""
+    all_activities = []
+    page = 1
+    headers = {"Authorization": f"Bearer {access_token}"}
+    params = {"page": page, "per_page": per_page}
+    
+    if after:
+        params["after"] = after  # Only fetch activities after the specified timestamp
+
+    while True:
+    # while page < 5:
+        response = requests.get(activities_url, headers=headers, params=params)
+        if response.status_code == 200:
+            activities = response.json()
+            if not activities:  # No more activities to fetch
+                break
+            all_activities.extend(activities)
+            print(f"Fetched page {page}, retrieved {len(activities)} activities")
+            page += 1
+            params["page"] = page
+        elif response.status_code == 429:  # Rate limit error
+            print("Rate limit exceeded. Saving activities.")
+            break
+        else:
+            print("Error fetching activities:", response.json())
             break
 
-        # Add the current page of activities to the full list
-        all_activities.extend(activities)
+    print(f"Total activities retrieved: {len(all_activities)}")
+    return all_activities
 
-        # Print progress (optional)
-        print(f"Fetched page {page}, retrieved {len(activities)} activities")
 
-        # Increment to fetch the next page
-        page += 1
 
-        # Optional: Small delay to avoid rate limiting
-        time.sleep(1)
+
+
+def get_most_recent_timestamp(activities):
+    """Get the most recent activity's timestamp."""
+    # Sort activities by start_date to ensure we get the most recent one
+    activities_sorted = sorted(activities, key=lambda x: x['start_date'], reverse=True)
+    
+    # Get the most recent activity (first in the sorted list)
+    return activities_sorted[0]['start_date'] if activities_sorted else None
+
+def main():
+    # Get the access token
+    access_token = get_access_token()
+
+    if access_token:
+        print("Access token retrieved:", access_token)
+
+        # Get the timestamp of the last fetched activity (if any)
+        last_fetched_datetime = get_last_fetched_datetime()
+
+        # Fetch activities incrementally
+        activities = fetch_activities(access_token, activities_url, after=last_fetched_datetime)
+        
+
+        if activities:
+            # Get the most recent timestamp
+            most_recent_timestamp = get_most_recent_timestamp(activities)
+            if most_recent_timestamp:
+                print(f"Most recent timestamp: {most_recent_timestamp}")
+                # Save the most recent timestamp
+                save_last_fetched_datetime(most_recent_timestamp)
+
+            # Save activities to CSV
+            save_activities_to_csv(activities)
+        else:
+            print("No activities fetched.")
     else:
-        print("Error fetching activities:", response.json())
-        break
+        print("No access token found or file error.")
 
-# Display the total number of activities fetched
-print(f"Total activities retrieved: {len(all_activities)}")
-
-
-# Convert the list of activities to a pandas DataFrame
-activities_df = pd.DataFrame(all_activities)
-
-# Save the DataFrame to a CSV file
-activities_df.to_csv("strava_activities.csv", index=False)
-
-print("Activities saved to strava_activities.csv")
+if __name__ == "__main__":
+    main()
