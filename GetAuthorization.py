@@ -86,7 +86,7 @@ def update_env_file(key, value):
     print(f"Updated {key} in .env file.")
 
 
-if __name__ == "__main__":
+def main():
     #First build your parameters from the env file
     client_id, redirected_url, scope =  build_params()
 
@@ -107,3 +107,5 @@ if __name__ == "__main__":
         update_env_file("auth_code", auth_code)
     else:
         print("Failed to retrieve authorization code.")
+if __name__ == "__main__":
+        main()
