@@ -40,7 +40,9 @@ else:
         # Refresh the token if expired
         if expiry < datetime.now(timezone.utc):
             print("Token is expired. Refreshing...")
-            RefreshToken.main()  
+            RefreshToken.main()
+            GetActivities.main() 
+  
         else:
             print("Token is valid. Fetching activities...")
             GetActivities.main() 

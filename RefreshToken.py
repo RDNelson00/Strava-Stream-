@@ -19,7 +19,7 @@ def get_refresh_token():
 # Get the new access token using the refresh token
 def get_token(refresh_token, token_file):
     
-    client_id, client_secret = load_env_variables()
+    client_id, client_secret, auth_code = load_env_variables()
 
     # Endpoint for refreshing the token
     token_url = "https://www.strava.com/oauth/token"
