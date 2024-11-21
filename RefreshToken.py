@@ -1,35 +1,25 @@
 import requests
 import pandas as pd
 import time
-import os
 import json  # Import json for reading/writing JSON files
-from dotenv import load_dotenv
-
-# Load environment variables from .env
-load_dotenv()
-
-#set environment variables to local variables
-client_id = os.getenv("client_id")
-client_secret = os.getenv("client_secret")
-auth_code = os.getenv("auth_code")
-
-if not client_id or not client_secret or not auth_code:
-    raise Exception("Missing one or more required environment variables.")
+from GetToken import load_env_variables
 
 # File to store the access token and refresh token
-token_file = "strava_tokens.json"
 
 
 
 def get_refresh_token():
+    token_file = "strava_tokens.json"
     with open(token_file, 'r') as f:
         tokens = json.load(f)
-        return tokens.get('refresh_token')  # Extract the refresh token
+        refresh_token = tokens.get('refresh_token')  # Extract the refresh token
+        return refresh_token, token_file
 
-refresh_token = get_refresh_token()
 
 # Get the new access token using the refresh token
-def get_token():
+def get_token(refresh_token, token_file):
+    
+    client_id, client_secret = load_env_variables()
 
     # Endpoint for refreshing the token
     token_url = "https://www.strava.com/oauth/token"
@@ -67,5 +57,14 @@ def get_token():
         raise Exception("Failed to refresh token:", data)
 
 
-# Refresh the access token
-get_token()
+def main():
+    
+    #load the refresh token from the token file
+    refresh_token, token_file = get_refresh_token()
+
+    #retreive the new token
+    get_token(refresh_token, token_file)
+
+
+if __name__ == "__main__":
+    main()

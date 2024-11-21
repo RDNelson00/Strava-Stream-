@@ -3,6 +3,9 @@ from datetime import datetime, timezone
 import RefreshToken
 import GetActivities
 import GetAuthorization
+import GetToken
+
+
 import os
 
 
@@ -24,7 +27,7 @@ def get_token_expiry():
 # Main Logic
 if not is_authorized():
     print("Authorization not found. Starting the authorization flow...")
-    GetAuthorization.main()  # Run your authorization script here
+    GetAuthorization.main()  
 else:
     print("Authorization found. Checking token status...")
 
