@@ -16,8 +16,9 @@ def is_authorized():
 def get_token_expiry():
     with open(token_file, 'r') as f:
         tokens = json.load(f)
-        return tokens.get('issued_at')  # Extract the refresh token
-        
+        return tokens.get('expires_at')  # Extract the refresh token
+
+expiry = get_token_expiry()
 
 
 
