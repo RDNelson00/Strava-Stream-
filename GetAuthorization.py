@@ -1,20 +1,33 @@
-import requests
 import os
 import webbrowser
 from urllib.parse import urlencode, urlparse, parse_qs
 from dotenv import load_dotenv
 
-# Load environment variables from .env file (client_id, client_secret, redirect_uri)
-load_dotenv()
+#first go get the parameters from the env var file
+def build_params():
+    """
+    Load required environment variables for the Strava OAuth flow.
+    Returns:
+        client_id, redirect_uri, scope (tuple of strings)
+    Raises:
+        ValueError if any required environment variable is missing.
+    """
+    load_dotenv()
+    
+    
+        
+    client_id = os.getenv("client_id")
+    redirect_uri = os.getenv("redirect_URI")
+    scope = os.getenv("scope", "read")  # Default to 'read' if not specified
+    
+    if not client_id or not redirect_uri:
+        raise ValueError("Missing required environment variables.")
 
-# Get your Strava API credentials from environment variables
-client_id = os.getenv("client_id")
-client_secret = os.getenv("client_secret")
-redirect_uri = os.getenv("redirect_URI")  # The URI to which Strava will redirect with the code
-scope = os.getenv("scope")  # Modify as needed (example: read,activity:read)
+    return client_id, redirect_uri, scope
 
-# Step 1: Generate the authorization URL
-def generate_auth_url():
+
+# next Generate the authorization URL
+def generate_auth_url(client_id, redirect_uri, scope):
     base_url = "https://www.strava.com/oauth/authorize"
     
     # Prepare the parameters
@@ -30,22 +43,22 @@ def generate_auth_url():
     return auth_url
 
 # Step 2: Redirect user to Strava authorization URL
-def redirect_user_to_strava():
-    auth_url = generate_auth_url()
+def redirect_user_to_strava(auth_url):
     print("Opening browser for user authorization...")
     webbrowser.open(auth_url)  # Open the authorization URL in the default web browser
 
 # Step 3: Handle the redirect from Strava (capture the authorization code)
 def get_auth_code_from_redirect(url):
+    
+    #let's make sure they put in a valid URL
+    if not url.startswith("http"):
+        print("Invalid URL. Please ensure you paste the full redirected URL.")
+        return None
+
     parsed_url = urlparse(url)
     query_params = parse_qs(parsed_url.query)
-    code = query_params.get("code")
-    
-    if code:
-        return code[0]  # Return the first value of the 'code' parameter
-    else:
-        print("Error: Authorization code not found in the URL.")
-        return None
+    return query_params.get("code", [None])[0]
+
 
 # Step 4: Update the .env file with the authorization code
 def update_env_file(key, value):
@@ -74,10 +87,19 @@ def update_env_file(key, value):
 
 
 if __name__ == "__main__":
-    redirect_user_to_strava()
+    #First build your parameters from the env file
+    client_id, redirected_url, scope =  build_params()
+
+    #Now build the URL
+    auth_url = generate_auth_url(client_id, redirected_url, scope)
+
+    #Now redirect the user to strea
+    redirect_user_to_strava(auth_url)
     
     # Get the redirected URL from the user
     redirected_url = input("Paste the redirected URL here: ")
+    
+    #Get the auth code from the URL response
     auth_code = get_auth_code_from_redirect(redirected_url)
     
     if auth_code:
