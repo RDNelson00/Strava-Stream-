@@ -123,6 +123,9 @@ def save_activities_to_csv(activities, filename="strava_activities.csv"):
         os.chmod(filename, 0o644)  # Make the file writable
         activities_df = pd.DataFrame(activities)
        
+       # Ensure the new data matches the column structure of the existing file
+        existing_df = pd.read_csv(filename, nrows=0)  # Load just the headers
+        activities_df = activities_df.reindex(columns=existing_df.columns, fill_value=None)
 
         # Append the data
         activities_df.to_csv(filename, index=False, mode='a', header=False)
