@@ -5,12 +5,14 @@ import GetActivities
 import GetAuthorization
 import GetToken
 import os
+from dotenv import load_dotenv
 
 
 token_file = 'strava_tokens.json'
 
 # Function to check if the user has granted authorization
 def is_authorized():
+    load_dotenv()
     auth_code = os.getenv("auth_code")  # Check for auth_code in .env
     return auth_code is not None
 
@@ -20,6 +22,8 @@ def get_token_expiry():
         return tokens.get('expires_at')  # Extract the refresh token
         
 
+
+print(f"Auth code from environment: {os.getenv('auth_code')}")
 
 
 # Main Logic
