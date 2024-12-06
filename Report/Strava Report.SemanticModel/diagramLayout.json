@@ -20,6 +20,51 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 98
+          },
+          "nodeIndex": "_Metrics",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 74
+          },
+          "nodeIndex": "Weekdays",
+          "nodeLineageTag": "3dec564b-89e7-4ba8-969a-5d05cdd99902",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Time",
+          "nodeLineageTag": "fcec7c9d-6538-4e07-a861-6566f3bffe6d",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "PRs",
+          "nodeLineageTag": "16f71614-59e7-4582-a626-aff68bb831b1",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
@@ -28,8 +73,75 @@
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
       "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 416,
+            "y": 47
+          },
+          "nodeIndex": "Weekdays",
+          "nodeLineageTag": "3dec564b-89e7-4ba8-969a-5d05cdd99902",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 807,
+            "y": 192
+          },
+          "nodeIndex": "strava_activities",
+          "nodeLineageTag": "25e55b73-24e9-4512-964b-f023c1f4aa6f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 926,
+            "y": -8
+          },
+          "nodeIndex": "Time",
+          "nodeLineageTag": "fcec7c9d-6538-4e07-a861-6566f3bffe6d",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 328,
+            "y": 515
+          },
+          "nodeIndex": "PRs",
+          "nodeLineageTag": "16f71614-59e7-4582-a626-aff68bb831b1",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        }
+      ],
+      "name": "Model",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
     }
   ],
-  "selectedDiagram": "All tables",
+  "selectedDiagram": "Model",
   "defaultDiagram": "All tables"
 }

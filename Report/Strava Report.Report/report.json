@@ -1,13 +1,12 @@
 {
-  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2},\"customTheme\":{\"name\":\"Custom00942192802668207.json\",\"version\":\"5.58\",\"type\":1}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.58\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2},\"customTheme\":{\"name\":\"Custom00942192802668207.json\",\"version\":\"5.58\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "filters": "[{\"name\":\"4be96e27d47710940dda\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"strava_activities\"}},\"Property\":\"Activity Type\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Activity Type\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Run'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
   "layoutOptimization": 0,
   "pods": [
     {
       "boundSection": "971abe95c09a114b0263",
       "config": "{}",
-      "name": "17cb64c573b16b8c4614",
-      "parameters": "[{\"name\":\"2759ca5846d8dba06dd1\",\"boundFilter\":\"92f7e543011026e30243\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"strava_activities\"}},\"Property\":\"Activity Id\"}}}]",
-      "type": 1
+      "name": "17cb64c573b16b8c4614"
     },
     {
       "boundSection": "e6046dc00e005b1d30c1",
@@ -28,13 +27,23 @@
             "type": 201
           },
           {
-            "name": "strava4171208527862269.png",
-            "path": "strava4171208527862269.png",
+            "name": "output-onlinepngtools8380915537291971.png",
+            "path": "output-onlinepngtools8380915537291971.png",
+            "type": 100
+          },
+          {
+            "name": "output-onlinepngtools_(1)01959786868097968.png",
+            "path": "output-onlinepngtools_(1)01959786868097968.png",
             "type": 100
           },
           {
             "name": "strava@logotyp.us2540401456727168.png",
             "path": "strava@logotyp.us2540401456727168.png",
+            "type": 100
+          },
+          {
+            "name": "updated_pro_pic9649482771729734.png",
+            "path": "updated_pro_pic9649482771729734.png",
             "type": 100
           }
         ],
@@ -59,56 +68,126 @@
   ],
   "sections": [
     {
-      "config": "{}",
-      "displayName": "Page 1",
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}}}}]}}",
+      "displayName": "Running Dashboard",
       "displayOption": 1,
-      "filters": "[{\"name\":\"92f7e543011026e30243\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"strava_activities\"}},\"Property\":\"Activity Id\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
+      "filters": "[]",
       "height": 720.00,
       "name": "971abe95c09a114b0263",
       "visualContainers": [
         {
-          "config": "{\"name\":\"1b1bdd3372800eb7e889\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":110.88145896656536,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FC4C02'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"84D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"parentGroupName\":\"f51f2d53045b9387740b\",\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"0ae84dd731682a5b2bd2\",\"layouts\":[{\"id\":0,\"position\":{\"height\":179.93920972644378,\"width\":837.4468085106383,\"x\":1.7446451356383006,\"y\":425.28395307454326,\"z\":4000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"strava_activities.Start Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"strava_activities.Start Date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"strava_activities.Start Date.Variation.Date Hierarchy.Day\"}],\"Y\":[{\"queryRef\":\"_Metrics.Total Distance (mi)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Metrics\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Name\":\"Variation\",\"Property\":\"Start Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"strava_activities.Start Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Start Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Name\":\"Variation\",\"Property\":\"Start Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"strava_activities.Start Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Start Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Name\":\"Variation\",\"Property\":\"Start Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"strava_activities.Start Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Start Date Day\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Distance (mi)\"},\"Name\":\"_Metrics.Total Distance (mi)\",\"NativeReferenceName\":\"Total Distance (mi)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Auto'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"75L\"}}}}}],\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Date'\"}}}}}],\"dataPoint\":[{\"properties\":{}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}},\"parentGroupName\":\"5ffc3adb3a0076cd9e77\"}",
           "filters": "[]",
-          "height": 110.88,
-          "width": 1280.00,
-          "x": 0.00,
-          "y": 0.00,
-          "z": 0.00
+          "height": 179.94,
+          "width": 837.45,
+          "x": 1.74,
+          "y": 425.28,
+          "z": 4000.00
         },
         {
-          "config": "{\"name\":\"6554f10aaa767b565e79\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":2.917933130699088,\"z\":2000,\"width\":185.77507598784194,\"height\":105.04559270516718,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava@logotyp.us2540401456727168.png\"}}}}}]}},\"parentGroupName\":\"f51f2d53045b9387740b\",\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"18551c8db62c6c68d5d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":420.1823708206687,\"y\":0,\"z\":8000,\"width\":186.74772036474164,\"height\":96.29179331306992,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Metrics.Activity Count\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Metrics\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Activity Count\"},\"Name\":\"_Metrics.Activity Count\",\"NativeReferenceName\":\"Total Runs\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Activity Count\"}}}]},\"columnProperties\":{\"Time.Total Distance (mi)\":{\"formatString\":null,\"displayName\":\"Total Distance Run (mi)\"},\"_Metrics.Activity Count\":{\"displayName\":\"Total Runs\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"image\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'output-onlinepngtools (1).png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"output-onlinepngtools_(1)01959786868097968.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Left'\"}}},\"padding\":{\"expr\":{\"Literal\":{\"Value\":\"18L\"}}},\"size\":{\"expr\":{\"Literal\":{\"Value\":\"40L\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"fillCustom\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"41D\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}},\"parentGroupName\":\"5aec4fcf40d4d35e29ad\"}",
           "filters": "[]",
-          "height": 105.05,
-          "width": 185.78,
+          "height": 96.29,
+          "width": 186.75,
+          "x": 420.18,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"2a17e8729b5668c402dc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":213.98176291793314,\"height\":96.29179331306992,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Metrics.Total Distance (mi)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Metrics\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Distance (mi)\"},\"Name\":\"_Metrics.Total Distance (mi)\",\"NativeReferenceName\":\"Total Mileage\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Distance (mi)\"}}}]},\"columnProperties\":{\"Time.Total Distance (mi)\":{\"formatString\":null,\"displayName\":\"Total Distance Run (mi)\"},\"_Metrics.Total Distance (mi)\":{\"displayName\":\"Total Mileage\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"image\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'output-onlinepngtools.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"output-onlinepngtools8380915537291971.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"size\":{\"expr\":{\"Literal\":{\"Value\":\"40L\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Left'\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"padding\":{\"expr\":{\"Literal\":{\"Value\":\"18L\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"textWrap\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"fillCustom\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"41D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}},\"parentGroupName\":\"5aec4fcf40d4d35e29ad\"}",
+          "filters": "[]",
+          "height": 96.29,
+          "width": 213.98,
           "x": 0.00,
-          "y": 2.92,
+          "y": 0.00,
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"885e24ef5b8976ab212e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":609.5238095238095,\"y\":129.8985167837627,\"z\":0,\"width\":644.4964871194379,\"height\":316.75253708040594,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"X\":[{\"queryRef\":\"strava_activities.Start Long\"}],\"Y\":[{\"queryRef\":\"strava_activities.Start Lat\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Long\"},\"Name\":\"strava_activities.Start Long\",\"NativeReferenceName\":\"Start Long\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Lat\"},\"Name\":\"strava_activities.Start Lat\",\"NativeReferenceName\":\"Start Lat\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
-          "filters": "[{\"name\":\"b1f10d45bab73e447cbb\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"strava_activities\"}},\"Property\":\"Start Long\"}},\"type\":\"Categorical\",\"howCreated\":0,\"isHiddenInViewMode\":true},{\"name\":\"63d34255207a406a101e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"strava_activities\"}},\"Property\":\"Start Lat\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Lat\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"''\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":true,\"isLockedInViewMode\":true}]",
-          "height": 316.75,
-          "width": 644.50,
-          "x": 609.52,
-          "y": 129.90,
-          "z": 0.00
+          "config": "{\"name\":\"4ed5df0a0080331a1028\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":7000,\"width\":838.419452887538,\"height\":188.69300911854103,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"strava_activities.Web Link to Activity\"},{\"queryRef\":\"strava_activities.Start Date\"},{\"queryRef\":\"strava_activities.Activity Name\"},{\"queryRef\":\"PRs.Race Distance\"},{\"queryRef\":\"Sum(strava_activities.Distance (mi))\"},{\"queryRef\":\"strava_activities.Elapsed Time\"},{\"queryRef\":\"strava_activities.Avg. Pace (min/mi)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"PRs\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Activity Name\"},\"Name\":\"strava_activities.Activity Name\",\"NativeReferenceName\":\"Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Elapsed Time\"},\"Name\":\"strava_activities.Elapsed Time\",\"NativeReferenceName\":\"Elapsed Time\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Web Link to Activity\"},\"Name\":\"strava_activities.Web Link to Activity\",\"NativeReferenceName\":\"Web Link\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Avg. Pace (min/mi)\"},\"Name\":\"strava_activities.Avg. Pace (min/mi)\",\"NativeReferenceName\":\"Avg. Pace (min/mi)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Date\"},\"Name\":\"strava_activities.Start Date\",\"NativeReferenceName\":\"Start Date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Race Distance\"},\"Name\":\"PRs.Race Distance\",\"NativeReferenceName\":\"Race Distance\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Distance (mi)\"},\"Name\":\"Sum(strava_activities.Distance (mi))\",\"NativeReferenceName\":\"Distance (mi)\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Elapsed Time\"}}}]},\"columnProperties\":{\"strava_activities.Web Link to Activity\":{\"displayName\":\"Web Link\"},\"strava_activities.Activity Name\":{\"displayName\":\"Name\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"values\":[{\"properties\":{\"urlIcon\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"270.83115461852975D\"}}}},\"selector\":{\"metadata\":\"strava_activities.Activity Name\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"74.5197757135343D\"}}}},\"selector\":{\"metadata\":\"strava_activities.Elapsed Time\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"110.57446068008419D\"}}}},\"selector\":{\"metadata\":\"strava_activities.Avg. Pace (min/mi)\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Minimal'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Personal Bests'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}},\"parentGroupName\":\"5ffc3adb3a0076cd9e77\"}",
+          "filters": "[{\"name\":\"09f7169772d10c5dc820\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PRs\"}},\"Property\":\"isPR\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PRs\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"isPR\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"1L\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":true}]",
+          "height": 188.69,
+          "width": 838.42,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 7000.00
         },
         {
-          "config": "{\"name\":\"d25fe89247d671b02a50\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1129.240121580547,\"y\":4.86322188449848,\"z\":3000,\"width\":124.4984802431611,\"height\":100.1823708206687,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava4171208527862269.png\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"f51f2d53045b9387740b\",\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"5aec4fcf40d4d35e29ad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":356.96048632218844,\"y\":0,\"z\":4000,\"width\":606.9300911854103,\"height\":96.29179331306992}}],\"singleVisualGroup\":{\"displayName\":\"Group 2\",\"groupMode\":0}}",
+          "height": 96.29,
+          "width": 606.93,
+          "x": 356.96,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5ffc3adb3a0076cd9e77\",\"layouts\":[{\"id\":0,\"position\":{\"x\":434.00003571542555,\"y\":97.99872169749318,\"z\":5000,\"width\":839.3933671462345,\"height\":605.2231628009871,\"tabOrder\":5000}}],\"singleVisualGroup\":{\"displayName\":\"Group 3\",\"groupMode\":0}}",
+          "height": 605.22,
+          "width": 839.39,
+          "x": 434.00,
+          "y": 98.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"6554f10aaa767b565e79\",\"layouts\":[{\"id\":0,\"position\":{\"height\":96.29179331306993,\"width\":232.46200607902736,\"x\":0,\"y\":0,\"z\":2000,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava@logotyp.us2540401456727168.png\"}}}}}]}},\"parentGroupName\":\"f51f2d53045b9387740b\",\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
-          "height": 100.18,
-          "width": 124.50,
-          "x": 1129.24,
-          "y": 4.86,
+          "height": 96.29,
+          "width": 232.46,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"68be11e505319d4400bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":213.98176291793317,\"y\":0,\"z\":6000,\"width\":206.20060790273558,\"height\":96.29179331306992,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"_Metrics.Activity Count\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Metrics\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Activity Count\"},\"Name\":\"_Metrics.Activity Count\",\"NativeReferenceName\":\"Total Runs\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Activity Count\"}}}]},\"columnProperties\":{\"Time.Total Distance (mi)\":{\"formatString\":null,\"displayName\":\"Total Distance Run (mi)\"},\"_Metrics.Activity Count\":{\"displayName\":\"Total Runs\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"image\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'output-onlinepngtools (1).png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"output-onlinepngtools_(1)01959786868097968.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Left'\"}}},\"padding\":{\"expr\":{\"Literal\":{\"Value\":\"18L\"}}},\"size\":{\"expr\":{\"Literal\":{\"Value\":\"40L\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"fillCustom\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"41D\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}},\"parentGroupName\":\"5aec4fcf40d4d35e29ad\"}",
+          "filters": "[]",
+          "height": 96.29,
+          "width": 206.20,
+          "x": 213.98,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"885e24ef5b8976ab212e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0.0012698817967231448,\"y\":203.37912957882543,\"z\":1000,\"width\":839.3920972644378,\"height\":207.17325227963528,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"X\":[{\"queryRef\":\"strava_activities.Start Long\"}],\"Y\":[{\"queryRef\":\"strava_activities.Start Lat\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Long\"},\"Name\":\"strava_activities.Start Long\",\"NativeReferenceName\":\"Start Long\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Lat\"},\"Name\":\"strava_activities.Start Lat\",\"NativeReferenceName\":\"Start Lat\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"heatMap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}},\"parentGroupName\":\"5ffc3adb3a0076cd9e77\"}",
+          "filters": "[{\"name\":\"63d34255207a406a101e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"strava_activities\"}},\"Property\":\"Start Lat\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Lat\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"''\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false,\"isLockedInViewMode\":true}]",
+          "height": 207.17,
+          "width": 839.39,
+          "x": 0.00,
+          "y": 203.38,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e9388f3a5d3adad00cc2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1032.9483282674773,\"y\":18.480243161094226,\"z\":3000,\"width\":231.48936170212767,\"height\":58.358662613981764,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"strava_activities.Start Date (Local)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Date (Local)\"},\"Name\":\"strava_activities.Start Date (Local)\",\"NativeReferenceName\":\"Start Date (Local)\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Date (Local)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"slider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"date\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 58.36,
+          "width": 231.49,
+          "x": 1032.95,
+          "y": 18.48,
           "z": 3000.00
         },
         {
-          "config": "{\"name\":\"f51f2d53045b9387740b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1,\"width\":1280,\"height\":110.88145896656536,\"tabOrder\":1000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
-          "height": 110.88,
-          "width": 1280.00,
-          "x": 0.00,
+          "config": "{\"name\":\"eea8205c044c06330ea0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.671732522796352,\"y\":97.26443768996961,\"z\":1000,\"width\":410.4559270516717,\"height\":604.984802431611,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"_Metrics.Activity Count\"}],\"Rows\":[{\"queryRef\":\"Time.Time\",\"active\":true}],\"Columns\":[{\"queryRef\":\"Weekdays.Day (ddd)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Metrics\",\"Type\":0},{\"Name\":\"w\",\"Entity\":\"Weekdays\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Time\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Activity Count\"},\"Name\":\"_Metrics.Activity Count\",\"NativeReferenceName\":\"Activity Count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Day (ddd)\"},\"Name\":\"Weekdays.Day (ddd)\",\"NativeReferenceName\":\"Day (ddd)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Time\"},\"Name\":\"Time.Time\",\"NativeReferenceName\":\"Start Time\"}]},\"columnProperties\":{\"Time.Time\":{\"displayName\":\"Start Time\"}},\"queryOptions\":{\"keepProjectionOrder\":true},\"showAllRoles\":[\"Rows\"],\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"gridHorizontalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}],\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Metrics\"}},\"Property\":\"Activity Count\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#F4DACE'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#FC4C02'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"_Metrics.Activity Count\"}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"46.94528875379939D\"}}}},\"selector\":{\"data\":[{\"total\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Weekdays\"}},\"Property\":\"Day (ddd)\"}}]}]}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"49.60428501024369D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Weekdays\"}},\"Property\":\"Day (ddd)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Sun'\"}}}}}]}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"43.58965669360972D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Weekdays\"}},\"Property\":\"Day (ddd)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Sat'\"}}}}}]}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"39.589665653495445D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Weekdays\"}},\"Property\":\"Day (ddd)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Fri'\"}}}}}]}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"35.86227520892605D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Weekdays\"}},\"Property\":\"Day (ddd)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Thu'\"}}}}}]}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"58.425536701362944D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Weekdays\"}},\"Property\":\"Day (ddd)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Wed'\"}}}}}]}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"41.75379781732879D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Weekdays\"}},\"Property\":\"Day (ddd)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Tue'\"}}}}}]}}],\"subTotals\":[{\"properties\":{\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnHeaders\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Minimal'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Workout Time Preference'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}},\"underline\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 604.98,
+          "width": 410.46,
+          "x": 11.67,
+          "y": 97.26,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"f277afaa916cb8111b3e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.671732522796352,\"y\":0,\"z\":2000,\"width\":106.01823708206688,\"height\":95.31914893617022,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"updated_pro_pic9649482771729734.png\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"34D\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 95.32,
+          "width": 106.02,
+          "x": 11.67,
           "y": 0.00,
-          "z": 1.00
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"f51f2d53045b9387740b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":110.88145896656536,\"y\":0,\"z\":0,\"width\":232.46200607902736,\"height\":96.29179331306992,\"tabOrder\":4000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 96.29,
+          "width": 232.46,
+          "x": 110.88,
+          "y": 0.00,
+          "z": 0.00
         }
       ],
       "width": 1280.00
@@ -123,57 +202,39 @@
       "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"0b7255208195463be89a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":3002}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"23dad503265080edd911\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":84.9336455893833,\"z\":0,\"width\":1280,\"height\":634.504293520687,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"strava_activities.Activity URL\"},{\"queryRef\":\"strava_activities.start_date\"},{\"queryRef\":\"strava_activities.name\"},{\"queryRef\":\"strava_activities.Activity Type\"},{\"queryRef\":\"strava_activities.kudos_count\"},{\"queryRef\":\"strava_activities.comment_count\"},{\"queryRef\":\"strava_activities.Elapsed Time\"},{\"queryRef\":\"Sum(strava_activities.Distance (mi))\"},{\"queryRef\":\"Time.Avg. Pace (min/mi)\"},{\"queryRef\":\"strava_activities.average_heartrate\"},{\"queryRef\":\"strava_activities.max_heartrate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Time\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Activity Name\"},\"Name\":\"strava_activities.name\",\"NativeReferenceName\":\"Activity Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Activity Type\"},\"Name\":\"strava_activities.Activity Type\",\"NativeReferenceName\":\"Activity Type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Kudos Count\"},\"Name\":\"strava_activities.kudos_count\",\"NativeReferenceName\":\"Kudos Count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Comment Count\"},\"Name\":\"strava_activities.comment_count\",\"NativeReferenceName\":\"Comment Count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Web Link to Activity\"},\"Name\":\"strava_activities.Activity URL\",\"NativeReferenceName\":\"Web Link\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Elapsed Time\"},\"Name\":\"strava_activities.Elapsed Time\",\"NativeReferenceName\":\"Elapsed Time\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Distance (mi)\"},\"Name\":\"Sum(strava_activities.Distance (mi))\",\"NativeReferenceName\":\"Distance (mi)1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Date (Local)\"},\"Name\":\"strava_activities.start_date\",\"NativeReferenceName\":\"Start Date (Local)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Average Heartrate\"},\"Name\":\"strava_activities.average_heartrate\",\"NativeReferenceName\":\"Avg. Heartrate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Max Heartrate\"},\"Name\":\"strava_activities.max_heartrate\",\"NativeReferenceName\":\"Max Heartrate\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Avg. Pace (min/mi)\"},\"Name\":\"Time.Avg. Pace (min/mi)\",\"NativeReferenceName\":\"Avg. Pace (min/mi)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Average Heartrate\"}}}]},\"columnProperties\":{\"strava_activities.average_heartrate\":{\"displayName\":\"Avg. Heartrate\"},\"strava_activities.Activity URL\":{\"displayName\":\"Web Link\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"urlIcon\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"112.0010672126744D\"}}}},\"selector\":{\"metadata\":\"strava_activities.Activity URL\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"205.04762184260682D\"}}}},\"selector\":{\"metadata\":\"strava_activities.name\"}},{\"properties\":{},\"selector\":{\"metadata\":\"strava_activities.Activity Type\"}}]}}}",
           "filters": "[]",
-          "height": 40.00,
-          "width": 100.00,
-          "x": 0.00,
-          "y": 0.00,
-          "z": 3002.00
-        },
-        {
-          "config": "{\"name\":\"11fc139b08b6ccbe40d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":2.917933130699088,\"z\":2000,\"width\":185.77507598784194,\"height\":105.04559270516718,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava@logotyp.us2540401456727168.png\"}}}}}]}},\"parentGroupName\":\"4ff254cea20079db0474\",\"howCreated\":\"InsertVisualButton\"}",
-          "filters": "[]",
-          "height": 105.05,
-          "width": 185.78,
-          "x": 0.00,
-          "y": 2.92,
-          "z": 2000.00
-        },
-        {
-          "config": "{\"name\":\"23dad503265080edd911\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":134.22492401215806,\"z\":1000,\"width\":1280,\"height\":585.531914893617,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"strava_activities.Activity URL\"},{\"queryRef\":\"strava_activities.start_date\"},{\"queryRef\":\"strava_activities.name\"},{\"queryRef\":\"strava_activities.Activity Type\"},{\"queryRef\":\"strava_activities.kudos_count\"},{\"queryRef\":\"strava_activities.comment_count\"},{\"queryRef\":\"strava_activities.Elapsed Time\"},{\"queryRef\":\"Sum(strava_activities.Distance (mi))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"strava_activities\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Activity Name\"},\"Name\":\"strava_activities.name\",\"NativeReferenceName\":\"Activity Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Activity Type\"},\"Name\":\"strava_activities.Activity Type\",\"NativeReferenceName\":\"Activity Type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Kudos Count\"},\"Name\":\"strava_activities.kudos_count\",\"NativeReferenceName\":\"Kudos Count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Comment Count\"},\"Name\":\"strava_activities.comment_count\",\"NativeReferenceName\":\"Comment Count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Web Link to Activity\"},\"Name\":\"strava_activities.Activity URL\",\"NativeReferenceName\":\"Web Link to Activity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Elapsed Time\"},\"Name\":\"strava_activities.Elapsed Time\",\"NativeReferenceName\":\"Elapsed Time\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Distance (mi)\"},\"Name\":\"Sum(strava_activities.Distance (mi))\",\"NativeReferenceName\":\"Distance (mi)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Start Date (Local)\"},\"Name\":\"strava_activities.start_date\",\"NativeReferenceName\":\"Start Date (Local)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Comment Count\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"urlIcon\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 585.53,
+          "height": 634.50,
           "width": 1280.00,
           "x": 0.00,
-          "y": 134.22,
-          "z": 1000.00
+          "y": 84.93,
+          "z": 0.00
         },
         {
-          "config": "{\"name\":\"4ff254cea20079db0474\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3001,\"width\":1280,\"height\":110.88145896656536,\"tabOrder\":1000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
-          "height": 110.88,
-          "width": 1280.00,
-          "x": 0.00,
-          "y": 0.00,
-          "z": 3001.00
-        },
-        {
-          "config": "{\"name\":\"b68063f3c30e8d30826d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":110.88145896656536,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FC4C02'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"84D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"parentGroupName\":\"4ff254cea20079db0474\",\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"7c5f1560077ad11ba7c0\",\"layouts\":[{\"id\":0,\"position\":{\"height\":75.94067135050742,\"width\":1280,\"x\":0,\"y\":0,\"z\":0,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FC4C02'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"84D\"}}}},\"selector\":{\"id\":\"default\"}}]}},\"parentGroupName\":\"c6f9d12e555bb2903ae7\",\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
-          "height": 110.88,
+          "height": 75.94,
           "width": 1280.00,
           "x": 0.00,
           "y": 0.00,
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"e643b29be00576076418\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1129.240121580547,\"y\":4.86322188449848,\"z\":3000,\"width\":124.4984802431611,\"height\":100.1823708206687,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava4171208527862269.png\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"4ff254cea20079db0474\",\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"c6f9d12e555bb2903ae7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2001,\"width\":1280,\"height\":75.94067135050742,\"tabOrder\":2003}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 75.94,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2001.00
+        },
+        {
+          "config": "{\"name\":\"fcc35c3604ac978ec810\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.993754879000781,\"y\":1.9984387197501952,\"z\":2000,\"width\":155.87822014051523,\"height\":71.94379391100703,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava@logotyp.us2540401456727168.png\"}}}}}]}},\"parentGroupName\":\"c6f9d12e555bb2903ae7\",\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
-          "height": 100.18,
-          "width": 124.50,
-          "x": 1129.24,
-          "y": 4.86,
-          "z": 3000.00
+          "height": 71.94,
+          "width": 155.88,
+          "x": 7.99,
+          "y": 2.00,
+          "z": 2000.00
         }
       ],
       "width": 1280.00
