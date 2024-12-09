@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"strava_activities\",\"_Metrics\",\"Weekdays\",\"Time\",\"PRs\"]"
+        "value": "[\"strava_activities\",\"_Metrics\",\"Time\",\"PRs\",\"Workout Type\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -364,39 +364,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.461
-                    }
-                  }
-                ]
-              },
-              "strava_activity.achievement_count": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "achievement_count"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "achievement count": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "achievement_count": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "achievement amount": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
                     }
                   }
                 ]
@@ -843,39 +810,6 @@
                   }
                 ]
               },
-              "strava_activity.athlete_count": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "athlete_count"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "athlete count": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "athlete_count": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "athlete amount": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  }
-                ]
-              },
               "strava_activity.average_cadence": {
                 "Definition": {
                   "Binding": {
@@ -1027,195 +961,6 @@
                       },
                       "State": "Suggested",
                       "Weight": 0.9
-                    }
-                  }
-                ]
-              },
-              "strava_activity.average_speed": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "average_speed"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "average speed": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "average_speed": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "speed": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "average rapidity": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "average swiftness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "average speediness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "average quickness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "average promptness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "rapidity": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "swiftness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "speediness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "quickness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "promptness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  }
-                ]
-              },
-              "strava_activity.avg__pace_min_mi": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "Avg. Pace (min/mi)"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "avg. pace (min/mi)": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "avg. pace": {
-                      "State": "Generated",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "avg. pace (min": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "avg . pace ( min mi )": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "mi)": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "average . pace (min": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "avg. pace ( minimum": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
                     }
                   }
                 ]
@@ -1796,119 +1541,6 @@
                   }
                 ]
               },
-              "strava_activity.end_latlng": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "end_latlng"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "end latlng": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "end_latlng": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "completion latlng": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "conclusion latlng": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "expiration latlng": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "close latlng": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "finish latlng": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "last latlng": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "stop latlng": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "closing latlng": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "ending latlng": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ]
-              },
               "strava_activity.flagged": {
                 "Definition": {
                   "Binding": {
@@ -1921,135 +1553,6 @@
                   {
                     "flagged": {
                       "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "strava_activity.gear_id": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "gear_id"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "gear id": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "gear_id": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "gear": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "gear identification": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "gear identity": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "gear identifier": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "gear credential": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "paraphernalia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "equipment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "apparatus": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "tackle": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "kit": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "stuff": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
                     }
                   }
                 ]
@@ -2432,7 +1935,9 @@
                       "Weight": 0.99
                     }
                   },
-                  {},
+                  {
+                    "": {}
+                  },
                   {
                     "location location": {
                       "Source": {
@@ -2535,158 +2040,6 @@
                   }
                 ]
               },
-              "strava_activity.manual": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "manual"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "manual": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "physical": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "labor-intensive": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "blue-collar": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "handbook": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.466
-                    }
-                  },
-                  {
-                    "guidebook": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.466
-                    }
-                  },
-                  {
-                    "booklet": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.466
-                    }
-                  },
-                  {
-                    "guide": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.452
-                    }
-                  }
-                ]
-              },
-              "strava_activity.map": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "map"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "map": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "atlas": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "plan": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "record": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "drawing": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "diagram": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  }
-                ]
-              },
               "strava_activity.max_heartrate": {
                 "Definition": {
                   "Binding": {
@@ -2709,135 +2062,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
-                    }
-                  }
-                ]
-              },
-              "strava_activity.max_speed": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "max_speed"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "max speed": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "max_speed": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "speed": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "maximum speed": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "max rapidity": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "max swiftness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "max speediness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "max quickness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "max promptness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "rapidity": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "swiftness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "speediness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "quickness": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
                     }
                   }
                 ]
@@ -2948,35 +2172,18 @@
                   }
                 ]
               },
-              "strava_activity.pr_count": {
+              "strava_activity.polyline": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "pr_count"
+                    "ConceptualProperty": "Polyline"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "pr count": {
+                    "polyline": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "pr_count": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "pr amount": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
                     }
                   }
                 ]
@@ -3013,382 +2220,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.452
-                    }
-                  }
-                ]
-              },
-              "strava_activity.resource_state": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "resource_state"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "resource state": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "resource_state": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {},
-                  {
-                    "resource location": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "resource province": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "resource territory": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "resource nation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "location": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "province": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "territory": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "nation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "resource condition": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "resource country": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  }
-                ]
-              },
-              "strava_activity.sport_type": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "sport_type"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "sport type": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "sport_type": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "type": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "sport category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "sport genre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "sport manner": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "sport variety": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "genre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "manner": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "variety": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "sport brand": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "sport class": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  }
-                ]
-              },
-              "strava_activity.start_date": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "Start Date"
-                  }
-                },
-                "SemanticType": "Time",
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "start date": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "date": {
-                      "State": "Generated",
-                      "Weight": 0.7
-                    }
-                  },
-                  {
-                    "start moment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "start period": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "commencement date": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "inception date": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "kickoff date": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "beginning date": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "first date": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "initiation date": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "launch date": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "kick off date": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.466
                     }
                   }
                 ]
@@ -4336,29 +3167,6 @@
                   }
                 ]
               },
-              "strava_activity.start_latlng": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "start_latlng"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "start latlng": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "start_latlng": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
               "strava_activity.start_long": {
                 "Definition": {
                   "Binding": {
@@ -4979,65 +3787,6 @@
                   }
                 ]
               },
-              "strava_activity.weekday_name": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "Weekday Name"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "weekday name": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "weekday nickname": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "weekday title": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "weekday label": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  },
-                  {
-                    "weekday tag": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
               "strava_activity.workout_type": {
                 "Definition": {
                   "Binding": {
@@ -5165,7 +3914,10 @@
                       "Weight": 0.727
                     }
                   }
-                ]
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
               },
               "time": {
                 "Definition": {
@@ -5236,7 +3988,7 @@
               "time.avg__pace_min_mi": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Time",
+                    "ConceptualEntity": "_Metrics",
                     "ConceptualProperty": "Avg. Pace (min/mi)"
                   }
                 },
@@ -5665,16 +4417,6 @@
                       "Type": "Noun",
                       "Weight": 0.727
                     }
-                  },
-                  {
-                    "Total Runs": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -5772,323 +4514,308 @@
                   "hour"
                 ]
               },
-              "weekday": {
+              "workout_type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Weekdays"
+                    "ConceptualEntity": "Workout Type"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "weekday": {
+                    "workout type": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "ordinary": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "standard": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "basic": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  },
-                  {
-                    "routine": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.476
-                    }
-                  }
-                ]
-              },
-              "weekday.day_ddd": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Weekdays",
-                    "ConceptualProperty": "Day (ddd)"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "day (ddd)": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "day": {
-                      "State": "Generated",
-                      "Weight": 0.75
-                    }
-                  }
-                ]
-              },
-              "weekday.day_full_name": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Weekdays",
-                    "ConceptualProperty": "Day (Full Name)"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "day (full name)": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "day": {
-                      "State": "Generated",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "day ( complete name )": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.621
-                    }
-                  },
-                  {
-                    "day ( entire name )": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.621
-                    }
-                  },
-                  {
-                    "day ( full surname )": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.621
-                    }
-                  },
-                  {
-                    "day ( full title )": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.621
-                    }
-                  },
-                  {
-                    "day ( whole name )": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.621
-                    }
-                  },
-                  {
-                    "day ( complete name)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "day ( entire name)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "day ( whole name)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "day (full nickname )": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "day (full title )": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  }
-                ]
-              },
-              "weekday.sort_order": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Weekdays",
-                    "ConceptualProperty": "Sort Order"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "sort order": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "order": {
+                    "type": {
                       "State": "Generated",
                       "Weight": 0.97
                     }
                   },
                   {
-                    "sort instruction": {
+                    "workout category": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.75
                     }
                   },
                   {
-                    "sort direction": {
+                    "workout genre": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.75
                     }
                   },
                   {
-                    "sort edict": {
+                    "workout manner": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.75
                     }
                   },
                   {
-                    "instruction": {
+                    "workout variety": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.491
+                      "Weight": 0.75
                     }
                   },
                   {
-                    "direction": {
+                    "category": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.491
+                      "Weight": 0.736
                     }
                   },
                   {
-                    "edict": {
+                    "genre": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.491
+                      "Weight": 0.736
                     }
                   },
                   {
-                    "sort command": {
+                    "manner": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.736
                     }
                   },
                   {
-                    "sort directive": {
+                    "variety": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.736
                     }
                   },
                   {
-                    "sort demand": {
+                    "workout brand": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.727
                     }
                   },
                   {
-                    "sort mandate": {
+                    "workout class": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "workout_type.id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Workout Type",
+                    "ConceptualProperty": "Id"
+                  }
+                },
+                "NameType": "Identifier",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "workout_type.workout_type": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Workout Type",
+                    "ConceptualProperty": "Workout Type"
+                  }
+                },
+                "NameType": "Name",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "workout type": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "workout type name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "type": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "workout category": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "workout genre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "workout manner": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "workout variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "category": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "genre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "manner": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "workout brand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "workout class": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "Mileage Type": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -6566,39 +5293,6 @@
                   "strava_activity.average_speed": {
                     "Target": {
                       "Entity": "strava_activity.average_speed"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "strava_activity_has_avg__pace_min_mi": {
-                "Binding": {
-                  "ConceptualEntity": "strava_activities"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "strava_activity.avg__pace_min_mi"
-                      },
-                      "Subject": {
-                        "Role": "strava_activity"
-                      }
-                    },
-                    "ID": "strava_activities_have_avg__pace_min_mi1",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "strava_activity": {
-                    "Target": {
-                      "Entity": "strava_activity"
-                    }
-                  },
-                  "strava_activity.avg__pace_min_mi": {
-                    "Target": {
-                      "Entity": "strava_activity.avg__pace_min_mi"
                     }
                   }
                 },
@@ -7259,6 +5953,39 @@
                   "strava_activity.photo_count": {
                     "Target": {
                       "Entity": "strava_activity.photo_count"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "strava_activity_has_polyline": {
+                "Binding": {
+                  "ConceptualEntity": "strava_activities"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "strava_activity.polyline"
+                      },
+                      "Subject": {
+                        "Role": "strava_activity"
+                      }
+                    },
+                    "ID": "strava_activities_have_polylines",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "strava_activity": {
+                    "Target": {
+                      "Entity": "strava_activity"
+                    }
+                  },
+                  "strava_activity.polyline": {
+                    "Target": {
+                      "Entity": "strava_activity.polyline"
                     }
                   }
                 },
@@ -7991,13 +6718,26 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "strava_activity.workout_type"
+                        "Role": "workout_type"
                       },
                       "Subject": {
                         "Role": "strava_activity"
                       }
                     },
                     "ID": "strava_activities_have_workout_types",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "strava_activity"
+                      },
+                      "Subject": {
+                        "Role": "workout_type"
+                      }
+                    },
+                    "ID": "workout_types_have_strava_activities",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -8008,9 +6748,9 @@
                       "Entity": "strava_activity"
                     }
                   },
-                  "strava_activity.workout_type": {
+                  "workout_type": {
                     "Target": {
-                      "Entity": "strava_activity.workout_type"
+                      "Entity": "workout_type"
                     }
                   }
                 },
@@ -8681,100 +7421,93 @@
                 },
                 "State": "Generated"
               },
-              "weekday_has_day_ddd": {
+              "workout_type_has_id": {
                 "Binding": {
-                  "ConceptualEntity": "Weekdays"
+                  "ConceptualEntity": "Workout Type"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "weekday.day_ddd"
+                        "Role": "workout_type.id"
                       },
                       "Subject": {
-                        "Role": "weekday"
+                        "Role": "workout_type"
                       }
                     },
-                    "ID": "weekdays_have_day_ddd",
+                    "ID": "workout_types_have_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "ids_are_names_IDs_of_workout_types",
+                    "Name": {
+                      "Name": {
+                        "Role": "workout_type.id"
+                      },
+                      "Subject": {
+                        "Role": "workout_type"
+                      }
+                    },
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "weekday": {
+                  "workout_type": {
                     "Target": {
-                      "Entity": "weekday"
+                      "Entity": "workout_type"
                     }
                   },
-                  "weekday.day_ddd": {
+                  "workout_type.id": {
                     "Target": {
-                      "Entity": "weekday.day_ddd"
+                      "Entity": "workout_type.id"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "weekday_has_day_full_name": {
+              "workout_type_has_workout_type": {
                 "Binding": {
-                  "ConceptualEntity": "Weekdays"
+                  "ConceptualEntity": "Workout Type"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "weekday.day_full_name"
+                        "Role": "workout_type.workout_type"
                       },
                       "Subject": {
-                        "Role": "weekday"
+                        "Role": "workout_type"
                       }
                     },
-                    "ID": "weekdays_have_day_full_name",
+                    "ID": "workout_types_have_workout_types",
                     "State": "Generated",
                     "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "weekday": {
-                    "Target": {
-                      "Entity": "weekday"
-                    }
                   },
-                  "weekday.day_full_name": {
-                    "Target": {
-                      "Entity": "weekday.day_full_name"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "weekday_has_sort_order": {
-                "Binding": {
-                  "ConceptualEntity": "Weekdays"
-                },
-                "Phrasings": [
                   {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "weekday.sort_order"
+                    "ID": "workout_types_are_names_IDs_of_workout_types",
+                    "Name": {
+                      "Name": {
+                        "Role": "workout_type.workout_type"
                       },
                       "Subject": {
-                        "Role": "weekday"
+                        "Role": "workout_type"
                       }
                     },
-                    "ID": "weekdays_have_sort_orders",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "weekday": {
+                  "workout_type": {
                     "Target": {
-                      "Entity": "weekday"
+                      "Entity": "workout_type"
                     }
                   },
-                  "weekday.sort_order": {
+                  "workout_type.workout_type": {
                     "Target": {
-                      "Entity": "weekday.sort_order"
+                      "Entity": "workout_type.workout_type"
                     }
                   }
                 },
@@ -8794,29 +7527,6 @@
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
     "relationships": [
       {
-        "name": "981212af-292d-4439-b425-eb17579cecce",
-        "fromColumn": "Start Date (Local)",
-        "fromTable": "strava_activities",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_2e6bc31b-1919-46eb-a4b1-aedeba84393d"
-      },
-      {
-        "name": "322aa32b-405f-44ce-ae7f-a7416d646598",
-        "fromColumn": "Start Date",
-        "fromTable": "strava_activities",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_c9ea594c-c8c4-472b-9118-a610c3da8c2f"
-      },
-      {
-        "name": "9770d83d-6555-004a-3517-d373350d6b97",
-        "fromColumn": "Weekday Name",
-        "fromTable": "strava_activities",
-        "toColumn": "Day (ddd)",
-        "toTable": "Weekdays"
-      },
-      {
         "name": "54d02fea-e897-c8c9-7b4b-6c5a35ef44d6",
         "fromColumn": "Local Start Time",
         "fromTable": "strava_activities",
@@ -8831,6 +7541,44 @@
         "fromTable": "PRs",
         "toColumn": "Activity Id",
         "toTable": "strava_activities"
+      },
+      {
+        "name": "AutoDetected_6e95d645-5807-431e-a427-74d85d28c672",
+        "fromColumn": "workout_type",
+        "fromTable": "strava_activities",
+        "toColumn": "Id",
+        "toTable": "Workout Type"
+      },
+      {
+        "name": "cd514271-d2d4-4124-9853-22ec31480408",
+        "fromColumn": "Date",
+        "fromTable": "Calendar",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_d888f68e-757d-4514-9eeb-cb09be254f39"
+      },
+      {
+        "name": "e0330078-1cc4-48dc-bd4a-3c40df95cd6a",
+        "fromColumn": "Start Date (Local)",
+        "fromTable": "strava_activities",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_586965cd-d908-441a-987b-2111ac5778fd"
+      },
+      {
+        "name": "59c6cace-7151-2c4a-0bc2-2e007ca14bc0",
+        "fromColumn": "Date",
+        "fromTable": "strava_activities",
+        "toColumn": "Date",
+        "toTable": "Calendar"
+      },
+      {
+        "name": "04cde49a-ac1d-4243-86ec-81cd4f246d25",
+        "fromColumn": "Week Beginning",
+        "fromTable": "Calendar",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_fd5b1e45-db02-4ba7-87b4-bcc5475270f0"
       }
     ],
     "sourceQueryCulture": "en-US",
@@ -8848,20 +7596,6 @@
           }
         ],
         "columns": [
-          {
-            "name": "resource_state",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "b31824a6-2944-4642-9267-957d99b90127",
-            "sourceColumn": "resource_state",
-            "summarizeBy": "none"
-          },
           {
             "name": "athlete",
             "annotations": [
@@ -8970,19 +7704,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "sport_type",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "90c18eb9-73dd-48d4-b02b-625aaab8c2ff",
-            "sourceColumn": "sport_type",
-            "summarizeBy": "none"
-          },
-          {
             "name": "Activity Id",
             "annotations": [
               {
@@ -9014,35 +7735,10 @@
                 "name": "Variation",
                 "defaultHierarchy": {
                   "hierarchy": "Date Hierarchy",
-                  "table": "LocalDateTable_2e6bc31b-1919-46eb-a4b1-aedeba84393d"
+                  "table": "LocalDateTable_586965cd-d908-441a-987b-2111ac5778fd"
                 },
                 "isDefault": true,
-                "relationship": "981212af-292d-4439-b425-eb17579cecce"
-              }
-            ]
-          },
-          {
-            "name": "Start Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Short Date",
-            "lineageTag": "1ca59ce0-11fa-44ec-9bee-fffaa81c7fc5",
-            "sourceColumn": "Start Date",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Date Hierarchy",
-                  "table": "LocalDateTable_c9ea594c-c8c4-472b-9118-a610c3da8c2f"
-                },
-                "isDefault": true,
-                "relationship": "322aa32b-405f-44ce-ae7f-a7416d646598"
+                "relationship": "e0330078-1cc4-48dc-bd4a-3c40df95cd6a"
               }
             ]
           },
@@ -9113,20 +7809,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "achievement_count",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "f628ff5b-f6ef-4993-8b44-452edf4b22ce",
-            "sourceColumn": "achievement_count",
-            "summarizeBy": "none"
-          },
-          {
             "name": "Kudos Count",
             "annotations": [
               {
@@ -9155,20 +7837,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "athlete_count",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "de165ce4-d237-4035-a7ae-b3d0b9e8c478",
-            "sourceColumn": "athlete_count",
-            "summarizeBy": "none"
-          },
-          {
             "name": "photo_count",
             "annotations": [
               {
@@ -9180,33 +7848,6 @@
             "formatString": "0",
             "lineageTag": "7e13c655-1b00-4784-af81-ab477935ec9c",
             "sourceColumn": "photo_count",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "map",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "31702930-4d82-478f-a0ce-ed56852b15a1",
-            "sourceColumn": "map",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "manual",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "boolean",
-            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
-            "lineageTag": "1bdbb373-72db-4d4e-8790-b4fea7bff43a",
-            "sourceColumn": "manual",
             "summarizeBy": "none"
           },
           {
@@ -9248,79 +7889,6 @@
             "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
             "lineageTag": "e1c64338-47e3-460d-be3a-642c83427f0c",
             "sourceColumn": "flagged",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "gear_id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "36e8eafb-778a-4c02-a2a7-663222ee43d8",
-            "sourceColumn": "gear_id",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "start_latlng",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ce2deb6a-638f-4f02-a1df-2169ce1a284b",
-            "sourceColumn": "start_latlng",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "end_latlng",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "31b456ee-68c7-46df-8899-b0141953ed61",
-            "sourceColumn": "end_latlng",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "average_speed",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "dataType": "double",
-            "lineageTag": "2daca199-de0d-433d-b7d3-e5a89806bb8e",
-            "sourceColumn": "average_speed",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "max_speed",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "dataType": "double",
-            "lineageTag": "2e8bfefa-2e11-4835-a4df-f2d10fb03161",
-            "sourceColumn": "max_speed",
             "summarizeBy": "none"
           },
           {
@@ -9389,20 +7957,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "pr_count",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "96c1d7ef-45ac-44f0-876f-5af91797e51b",
-            "sourceColumn": "pr_count",
-            "summarizeBy": "none"
-          },
-          {
             "name": "Suffer Score",
             "annotations": [
               {
@@ -9424,7 +7978,7 @@
                 "value": "User"
               }
             ],
-            "dataType": "int64",
+            "dataType": "double",
             "formatString": "0",
             "lineageTag": "f6154c21-a26d-47f6-a6fc-6e5464e3a9fc",
             "sourceColumn": "workout_type",
@@ -9523,40 +8077,6 @@
             "type": "calculated"
           },
           {
-            "name": "Avg. Pace (min/mi)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "expression": [
-              "",
-              "FORMAT(",
-              "    strava_activities[Elapsed Time (sec)]/strava_activities[Distance (mi)],\"mm:ss\")"
-            ],
-            "isDataTypeInferred": true,
-            "lineageTag": "cb07141c-82c0-436a-bfd8-e226fb15c604",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Weekday Name",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "expression": "FORMAT(strava_activities[Start Date (Local)],\"ddd\")",
-            "isDataTypeInferred": true,
-            "lineageTag": "1fea5e16-f860-4d85-96e3-20977620b893",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
             "name": "Local Start Time",
             "annotations": [
               {
@@ -9573,6 +8093,97 @@
             "lineageTag": "adc9db81-aa9c-4f53-ae19-16da766562c9",
             "sourceColumn": "Local Start Time",
             "summarizeBy": "none"
+          },
+          {
+            "name": "Polyline",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d42f8eef-065e-4d8c-8b1a-a8f6ca7d8fd6",
+            "sourceColumn": "Polyline",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Week Sort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "YEAR(strava_activities[Start Date (Local)]) * 100 + WEEKNUM(strava_activities[Start Date (Local)], 2)",
+              ""
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "30a5f597-6cf8-422f-b229-c2b5c8d3adc2",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "Race Distance",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "IF(",
+              "    RELATED('Workout Type'[Workout Type]) = \"Race\", ",
+              "    SWITCH(",
+              "        TRUE(),",
+              "        strava_activities[Distance (mi)] >= 0.9 && strava_activities[Distance (mi)] <= 1.1, \"1 Mile\",",
+              "        strava_activities[Distance (mi)] >= 2.8 && strava_activities[Distance (mi)] <= 3.4, \"5K\",",
+              "        strava_activities[Distance (mi)] >= 5.6 && strava_activities[Distance (mi)] <= 6.8, \"10K\",",
+              "        strava_activities[Distance (mi)] >= 4.5 && strava_activities[Distance (mi)] <= 5.5, \"5 Mile\",",
+              "        strava_activities[Distance (mi)] >= 9 && strava_activities[Distance (mi)] <= 11, \"10 Mile\",",
+              "        strava_activities[Distance (mi)] >= 11.8 && strava_activities[Distance (mi)] <= 14.3, \"Half Marathon\",",
+              "        strava_activities[Distance (mi)] >= 23.6 && strava_activities[Distance (mi)] <= 28.8, \"Full Marathon\",",
+              "        \"Unknown\"",
+              "    ),",
+              "    \"Not a Race\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "00d21723-c8a9-426d-a76d-b1c50c858590",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": "strava_activities[Start Date (Local)].[Date]",
+            "formatString": "Long Date",
+            "isDataTypeInferred": true,
+            "lineageTag": "69f99749-3f27-479e-9526-0fdbda06c870",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "25e55b73-24e9-4512-964b-f023c1f4aa6f",
@@ -9594,9 +8205,15 @@
                 "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Inserted Start of Hour\",{{\"Start of Hour\", type time}}),",
                 "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Changed Type1\",{{\"Start of Hour\", \"Local Start Time\"}, {\"average_heartrate\", \"Average Heartrate\"}, {\"max_heartrate\", \"Max Heartrate\"}}),",
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Renamed Columns1\",{\"trainer\", \"commute\", \"has_heartrate\", \"heartrate_opt_out\", \"display_hide_heartrate_option\", \"upload_id\", \"upload_id_str\", \"external_id\", \"from_accepted_tag\", \"total_photo_count\", \"has_kudoed\", \"average_watts\", \"device_watts\", \"kilojoules\", \"average_temp\"}),",
-                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Removed Columns\",{{\"suffer_score\", \"Suffer Score\"}})",
+                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Removed Columns\",{{\"suffer_score\", \"Suffer Score\"}}),",
+                "    #\"Inserted Text Between Delimiters2\" = Table.AddColumn(#\"Renamed Columns2\", \"Polyline\", each Text.BetweenDelimiters([map], \"'\", \"'\", 6, 0), type text),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Inserted Text Between Delimiters2\",{\"athlete\", \"Activity Name\", \"Distance (m)\", \"moving_time\", \"Elapsed Time (sec)\", \"total_elevation_gain\", \"Activity Type\", \"Activity Id\", \"Start Date (Local)\", \"Start Date\", \"timezone\", \"utc_offset\", \"location_city\", \"location_state\", \"location_country\", \"Kudos Count\", \"Comment Count\", \"photo_count\", \"private\", \"visibility\", \"flagged\", \"average_cadence\", \"Average Heartrate\", \"Max Heartrate\", \"elev_high\", \"elev_low\", \"Suffer Score\", \"workout_type\", \"Start Lat\", \"Start Long\", \"Local Start Time\", \"Polyline\"}),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Removed Other Columns\",{\"Start Date\"}),",
+                "    #\"Filtered Rows\" = Table.SelectRows(#\"Removed Columns1\", each ([Activity Type] = \"Run\")),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Filtered Rows\",null,0,Replacer.ReplaceValue,{\"workout_type\"}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",2,0,Replacer.ReplaceValue,{\"workout_type\"})",
                 "in",
-                "    #\"Renamed Columns2\""
+                "    #\"Replaced Value2\""
               ],
               "type": "m"
             }
@@ -9814,418 +8431,6 @@
         ]
       },
       {
-        "name": "LocalDateTable_2e6bc31b-1919-46eb-a4b1-aedeba84393d",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "17c7f6fc-68ab-4bee-834b-b703036a19da",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Year",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "428126dc-0b10-4251-8b7e-621640b9fdbe",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "fccfb6c2-5d70-4073-88f1-fa1f50fb902b",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Month",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "c8f60a45-4d06-48eb-a3a6-95e2373b3dc6",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "e98a6651-4df2-4d8f-bdba-93c5a3e0f0ed",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Quarter",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Qtr \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "a958aa00-b598-4371-9dd4-23b5eacb95a6",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Day",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "6765d770-c9d4-4f19-ac0c-9d5bdda14c93",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Date Hierarchy",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Year",
-                "column": "Year",
-                "lineageTag": "7c35e681-38ce-425b-a29c-678ab82fe9ce",
-                "ordinal": 0
-              },
-              {
-                "name": "Quarter",
-                "column": "Quarter",
-                "lineageTag": "d0333133-160a-4df3-b7f8-6664ed3ccbf9",
-                "ordinal": 1
-              },
-              {
-                "name": "Month",
-                "column": "Month",
-                "lineageTag": "21d5bd1a-b06f-4026-a4b1-253855cf50a2",
-                "ordinal": 2
-              },
-              {
-                "name": "Day",
-                "column": "Day",
-                "lineageTag": "615d9404-1d75-4cbb-9023-36452a210be2",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "3ac0e7a2-d4de-4a53-81df-0631fdf26f73"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "7f8d8673-fe40-4af2-8b23-9e90b69c22ae",
-        "partitions": [
-          {
-            "name": "LocalDateTable_2e6bc31b-1919-46eb-a4b1-aedeba84393d",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('strava_activities'[Start Date (Local)])), 1, 1), Date(Year(MAX('strava_activities'[Start Date (Local)])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
-      },
-      {
-        "name": "LocalDateTable_c9ea594c-c8c4-472b-9118-a610c3da8c2f",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "23a03187-3642-43b2-85da-1c5911d8bb02",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Year",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "4daa06e6-d993-4421-9e5d-8f083197e6eb",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "db9a01f4-17cc-4750-ac56-9975444364dc",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Month",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "5770659d-1691-4da0-aebf-08eda32a74fc",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "33e94fe8-97b1-4d6d-b661-38397751c722",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Quarter",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Qtr \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "d8a908c0-94e3-406c-9506-6d72669e6254",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Day",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "formatString": "0",
-            "isHidden": true,
-            "lineageTag": "48e064c2-cf2b-4f62-b40a-c6f8b6c2cb8f",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Date Hierarchy",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Year",
-                "column": "Year",
-                "lineageTag": "cf775d56-4e1e-47d5-b2e4-7335bffd262e",
-                "ordinal": 0
-              },
-              {
-                "name": "Quarter",
-                "column": "Quarter",
-                "lineageTag": "b7c952e0-f297-4a20-8564-6687be6ec8fe",
-                "ordinal": 1
-              },
-              {
-                "name": "Month",
-                "column": "Month",
-                "lineageTag": "32c2e65f-8e9b-49cd-a02c-349f91e3e836",
-                "ordinal": 2
-              },
-              {
-                "name": "Day",
-                "column": "Day",
-                "lineageTag": "fcd012af-c0c5-4ec8-bef8-eaf0e17114d3",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "77a5776e-dd2a-4058-a278-901ec4972808"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "c8309458-b4d8-4abf-bdf1-79a8b2ec6593",
-        "partitions": [
-          {
-            "name": "LocalDateTable_c9ea594c-c8c4-472b-9118-a610c3da8c2f",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('strava_activities'[Start Date])), 1, 1), Date(Year(MAX('strava_activities'[Start Date])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
-      },
-      {
         "name": "_Metrics",
         "annotations": [
           {
@@ -10251,11 +8456,16 @@
           },
           {
             "name": "Total Distance (mi)",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
             "expression": [
               "",
               "SUM(strava_activities[Distance (mi)])"
             ],
-            "formatString": "#,0.00",
             "lineageTag": "11857153-0078-4534-b69e-0f3df1559f09"
           },
           {
@@ -10268,6 +8478,36 @@
             ],
             "expression": "SUM(strava_activities[Elapsed Time (sec)])/3600",
             "lineageTag": "fe604751-0f4c-495c-9382-52dc9d255f04"
+          },
+          {
+            "name": "Avg. Pace (min/mi)",
+            "expression": [
+              "",
+              "VAR TotalTimeMinutes = SUM(strava_activities[Elapsed Time (sec)]) / 60",
+              "VAR TotalDistanceMiles = [Total Distance (mi)]",
+              "VAR AvgPaceMinutes = TotalTimeMinutes / TotalDistanceMiles",
+              "VAR Minutes = INT(AvgPaceMinutes)",
+              "VAR Seconds = ROUND((AvgPaceMinutes - Minutes) * 60, 0)",
+              "",
+              "RETURN ",
+              "    FORMAT(Minutes, \"00\") & \":\" & FORMAT(Seconds, \"00\")",
+              ""
+            ],
+            "lineageTag": "ae83f7cf-b38b-4471-b73a-db0728ee07cd"
+          },
+          {
+            "name": "Workout Mileage %",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Total Distance (mi)],",
+              "        'Workout Type'[Workout Type] = \"Workout\"",
+              ")",
+              "/",
+              "[Total Distance (mi)]"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "e6edd21c-329f-4b73-bac0-a2f807f07a3f"
           }
         ],
         "partitions": [
@@ -10282,84 +8522,6 @@
                 "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
                 "in",
                 "    #\"Removed Columns\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "Weekdays",
-        "annotations": [
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Day (ddd)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "SortByColumn"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "4dddef68-9407-4cb0-ab86-40c091c2ff90",
-            "sortByColumn": "Sort Order",
-            "sourceColumn": "Day (ddd)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Day (Full Name)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "bbe1b771-8bfc-46f6-859a-b271c47b40d1",
-            "sourceColumn": "Day (Full Name)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Sort Order",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "a1dc12ab-dd4b-4f2b-a7e8-f094f189a458",
-            "sourceColumn": "Sort Order",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "3dec564b-89e7-4ba8-969a-5d05cdd99902",
-        "partitions": [
-          {
-            "name": "Weekdays",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45W8s3PU9IBkSmJlUCGoVKsTrRSSGkqkA0kiyGiRmDR8NQUIBtI5sHEjSGqM0pBqjNKi6DCJmBht6JMIBtIQgRNwYLBiSVANpAsLYIIm0GES0GuAJIQQXOl2FgA\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"Day (ddd)\" = _t, #\"Day (Full Name)\" = _t, #\"Sort Order\" = _t]),",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Day (ddd)\", type text}, {\"Day (Full Name)\", type text}, {\"Sort Order\", Int64.Type}})",
-                "in",
-                "    #\"Changed Type\""
               ],
               "type": "m"
             }
@@ -10385,6 +8547,10 @@
               {
                 "name": "UnderlyingDateTimeDataType",
                 "value": "Time"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDateTimeCustom\":true}"
               }
             ],
             "changedProperties": [
@@ -10393,7 +8559,7 @@
               }
             ],
             "dataType": "dateTime",
-            "formatString": "Long Time",
+            "formatString": "hh:nn AM/PM",
             "lineageTag": "c3ddcd26-f81e-413a-afeb-2b3e2b1c80c4",
             "sortByColumn": "Sort Order",
             "sourceColumn": "Time",
@@ -10415,19 +8581,6 @@
           }
         ],
         "lineageTag": "fcec7c9d-6538-4e07-a861-6566f3bffe6d",
-        "measures": [
-          {
-            "name": "Avg. Pace (min/mi)",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "expression": "SUM(strava_activities[Elapsed Time (sec)])/60/[Total Distance (mi)]",
-            "lineageTag": "ae83f7cf-b38b-4471-b73a-db0728ee07cd"
-          }
-        ],
         "partitions": [
           {
             "name": "Time",
@@ -10478,14 +8631,14 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               }
             ],
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "17685bc5-1f7f-4e0d-a981-75d2ca48acab",
             "sourceColumn": "isPR",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "Race Distance",
@@ -10518,6 +8671,799 @@
             }
           }
         ]
+      },
+      {
+        "name": "Workout Type",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cae27f1d-a11a-4caf-9514-114d2ba86ad3",
+            "sourceColumn": "Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Workout Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "953cee9b-c8bb-4a10-9139-cf8a3a42c370",
+            "sourceColumn": "Workout Type",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "c269ae87-72af-4579-8f43-fe6946db4294",
+        "partitions": [
+          {
+            "name": "Workout Type",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlDSUQoqzVOK1YlWMgSxE5NTwRwjIMcnPy9dASZrDBQIzy/Kzi8tUYqNBQA=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Id = _t, #\"Workout Type\" = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Id\", Int64.Type}, {\"Workout Type\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "17e78c87d4f34916b8bbe35c0039791d"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "83ebfbcc-205b-48a3-afcd-93e0f238bd4f",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_d888f68e-757d-4514-9eeb-cb09be254f39"
+                },
+                "isDefault": true,
+                "relationship": "cd514271-d2d4-4124-9853-22ec31480408"
+              }
+            ]
+          },
+          {
+            "name": "Weekday Number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "WEEKDAY('Calendar'[Date],1)",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "bee8ab43-1848-4ca0-be8a-3a3a86aafe2c",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "Weekday",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT('Calendar'[Date],\"ddd\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "9445515c-e076-4e91-93a2-3a59fae03fbe",
+            "sortByColumn": "Weekday Number",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Week Beginning",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": [
+              "[date] - WEEKDAY([date], 2) + 1",
+              ""
+            ],
+            "formatString": "Short Date",
+            "isDataTypeInferred": true,
+            "lineageTag": "ede2e048-7309-45d0-b6d1-5c52765dca2c",
+            "summarizeBy": "none",
+            "type": "calculated",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_fd5b1e45-db02-4ba7-87b4-bcc5475270f0"
+                },
+                "isDefault": true,
+                "relationship": "04cde49a-ac1d-4243-86ec-81cd4f246d25"
+              }
+            ]
+          }
+        ],
+        "lineageTag": "24941d33-c219-4ab6-af7f-884df2cbf314",
+        "partitions": [
+          {
+            "name": "Calendar",
+            "mode": "import",
+            "source": {
+              "expression": "CALENDARAUTO(12)",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_d888f68e-757d-4514-9eeb-cb09be254f39",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "7f6aa7a4-805b-4480-b260-a76db0275f6d",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "35e4f52d-e634-4354-b254-9a5daee18672",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "c81a811d-ac1e-495c-be70-30ffaaf0d698",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "3203ffe4-dc93-49d8-b62d-fd9b5232533a",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "98ce718c-cf7b-44e7-98dd-d896529db34d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "53a632ad-5c19-4817-92f6-4cf264966b00",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "f6830687-9212-4457-a13c-f36ad0d6cffb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "05151060-4a09-462d-b902-ebd065e41df7",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "9e7d1592-aa80-45b9-9b22-3d9c5e9ba9ac",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "a4dd3751-eb67-430a-b028-9a32e61acc44",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "c1c4b659-9abd-49e8-91e8-778b461c4ffe",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "eaa331fa-9249-479b-a5ab-0c1d173ff806"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "e372c524-3460-4e4c-8a9f-aba0d5dca806",
+        "partitions": [
+          {
+            "name": "LocalDateTable_d888f68e-757d-4514-9eeb-cb09be254f39",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Calendar'[Date])), 1, 1), Date(Year(MAX('Calendar'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_586965cd-d908-441a-987b-2111ac5778fd",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "8c677635-edc9-4352-a52c-f67fa148364c",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "16903ce8-1224-4283-ada8-71c008fbb707",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b1276d34-8faa-407a-b6f6-250fb7dd6bca",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "613987cb-f832-4ce3-8632-f7032542c847",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "48ee2936-aec2-480d-a77d-cf60af678ad5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "328e660c-ae4f-48db-987f-358a3868ab20",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "febc3db6-8ba2-4efd-9b6f-51531e4c0068",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "5e276bf3-a35f-422c-aaa3-2caa24a34144",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "84f78527-822c-4024-a4db-84947d3db353",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "06562550-3195-464a-9b3f-460e42321a4a",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "ed27d25b-c5fb-4fb4-805c-744569602b75",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "7704f622-4ab6-453e-ab67-c5048add37af"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "35ac952d-5413-41ed-a7ac-1f91bb4c7182",
+        "partitions": [
+          {
+            "name": "LocalDateTable_586965cd-d908-441a-987b-2111ac5778fd",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('strava_activities'[Start Date (Local)])), 1, 1), Date(Year(MAX('strava_activities'[Start Date (Local)])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_fd5b1e45-db02-4ba7-87b4-bcc5475270f0",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "c2ac74a7-4c92-4fca-82ae-54c530dcd85b",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "0d52393d-d89c-44c6-9495-b07d0d65a767",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "dd946651-3eac-4d47-af02-8ee5786c8d80",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "0018b81b-3f25-40a4-aa12-73b86e809fa8",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "192f728e-9135-496e-8db6-7e45c516258e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "e8b72a4c-782c-4546-82ef-b429523ffcb8",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "854ce0c1-2d8b-4543-90b1-5c6481d5dff7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "6befa265-67b7-4339-8e30-d03f9ef6a102",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "48b8c8a2-0f34-4af5-85d3-a1f51f379fd6",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "61aa868f-b4ca-434e-a9fa-2ea93a63ee99",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "375ccfb1-ecb2-42c5-b4d5-f02777abf7ce",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "b1f5a6bf-ccc8-4187-a3d5-29dc6b5e0052"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "f93f15cd-54b4-4703-9ab0-a23e0a46518f",
+        "partitions": [
+          {
+            "name": "LocalDateTable_fd5b1e45-db02-4ba7-87b4-bcc5475270f0",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Calendar'[Week Beginning])), 1, 1), Date(Year(MAX('Calendar'[Week Beginning])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
       }
     ]
   }
