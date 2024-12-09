@@ -45,16 +45,6 @@
         },
         {
           "location": {},
-          "nodeIndex": "PRs",
-          "nodeLineageTag": "16f71614-59e7-4582-a626-aff68bb831b1",
-          "size": {
-            "height": 152,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {},
           "nodeIndex": "Workout Type",
           "nodeLineageTag": "c269ae87-72af-4579-8f43-fe6946db4294",
           "size": {
@@ -66,6 +56,15 @@
         {
           "location": {},
           "nodeIndex": "Calendar",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Races",
           "size": {
             "height": 200,
             "width": 234
@@ -112,19 +111,6 @@
             "width": 234
           },
           "zIndex": 3
-        },
-        {
-          "location": {
-            "x": 172,
-            "y": 350
-          },
-          "nodeIndex": "PRs",
-          "nodeLineageTag": "16f71614-59e7-4582-a626-aff68bb831b1",
-          "size": {
-            "height": 152,
-            "width": 234
-          },
-          "zIndex": 5
         },
         {
           "location": {
