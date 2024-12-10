@@ -1,5 +1,4 @@
 .env.txt
-Strava Report.SemanticModel/model.bim
 __pycache__/
 strava_activities.csv
 strava_tokens.json
