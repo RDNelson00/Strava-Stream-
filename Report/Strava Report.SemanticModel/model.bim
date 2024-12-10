@@ -1870,7 +1870,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "strava_activities",
-                    "ConceptualProperty": "moving_time"
+                    "ConceptualProperty": "Moving Time (sec)"
                   }
                 },
                 "State": "Generated",
@@ -3789,7 +3789,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_Metrics",
-                    "ConceptualProperty": "Avg Pace"
+                    "ConceptualProperty": "Avg. Pace"
                   }
                 },
                 "State": "Generated",
@@ -7300,7 +7300,7 @@
             "summarizeBy": "none"
           },
           {
-            "name": "moving_time",
+            "name": "Moving Time (sec)",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -7310,7 +7310,7 @@
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "74d9f5fa-d722-4bb3-8914-0b78bdbc9b28",
-            "sourceColumn": "moving_time",
+            "sourceColumn": "Moving Time (sec)",
             "summarizeBy": "none"
           },
           {
@@ -7844,6 +7844,21 @@
             "lineageTag": "69f99749-3f27-479e-9526-0fdbda06c870",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "Moving Time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT(TIME(0, 0, strava_activities[Moving Time (sec)]), \"HH:mm:ss\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "1c4a0add-3704-40ce-8600-c88560f8070b",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "25e55b73-24e9-4512-964b-f023c1f4aa6f",
@@ -7871,9 +7886,10 @@
                 "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Removed Other Columns\",{\"Start Date\"}),",
                 "    #\"Filtered Rows\" = Table.SelectRows(#\"Removed Columns1\", each ([Activity Type] = \"Run\")),",
                 "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Filtered Rows\",null,0,Replacer.ReplaceValue,{\"workout_type\"}),",
-                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",2,0,Replacer.ReplaceValue,{\"workout_type\"})",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",2,0,Replacer.ReplaceValue,{\"workout_type\"}),",
+                "    #\"Renamed Columns3\" = Table.RenameColumns(#\"Replaced Value2\",{{\"moving_time\", \"Moving Time (sec)\"}})",
                 "in",
-                "    #\"Replaced Value2\""
+                "    #\"Renamed Columns3\""
               ],
               "type": "m"
             }
@@ -8140,10 +8156,10 @@
             "lineageTag": "fe604751-0f4c-495c-9382-52dc9d255f04"
           },
           {
-            "name": "Avg Pace",
+            "name": "Avg. Pace",
             "expression": [
               "",
-              "VAR TotalTimeSec = SUM('strava_activities'[Elapsed Time (sec)])",
+              "VAR TotalTimeSec = SUM('strava_activities'[Moving Time (sec)])",
               "VAR TotalDistance = SUM('strava_activities'[Distance (mi)])",
               "VAR AvgPaceSec = DIVIDE(TotalTimeSec, TotalDistance)",
               "",
@@ -9115,7 +9131,7 @@
             "type": "calculatedTableColumn"
           },
           {
-            "name": "moving_time",
+            "name": "Moving Time (sec)",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -9125,9 +9141,9 @@
             "dataType": "int64",
             "formatString": "0",
             "isDataTypeInferred": true,
-            "isNameInferred": true,
+            "isNameInferred": false,
             "lineageTag": "a706eacc-d395-4e69-bbe3-301deefd25ce",
-            "sourceColumn": "strava_activities[moving_time]",
+            "sourceColumn": "strava_activities[Moving Time (sec)]",
             "summarizeBy": "sum",
             "type": "calculatedTableColumn"
           },
@@ -9768,6 +9784,22 @@
             "lineageTag": "3eff8888-962e-4189-a836-415ac769eec9",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "Moving Time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "8179e903-9032-4221-b5f2-25db6e8fc400",
+            "sourceColumn": "strava_activities[Moving Time]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
           }
         ],
         "lineageTag": "c9598a4a-7709-4fde-a9a1-04eaaad4c0e3",
