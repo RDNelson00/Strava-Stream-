@@ -8114,11 +8114,6 @@
             "value": "Table"
           }
         ],
-        "changedProperties": [
-          {
-            "property": "Name"
-          }
-        ],
         "lineageTag": "86d3aa75-f888-4412-a5ae-c6c155a91684",
         "measures": [
           {
