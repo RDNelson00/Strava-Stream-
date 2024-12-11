@@ -123,7 +123,7 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"920935b21a80e69c0b24\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0.319287515821177,\"y\":10.162089537433982,\"z\":4000,\"width\":106.01823708206688,\"height\":73.9209726443769,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"updated_pro_pic9649482771729734.png\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"34D\"}}}}}]}},\"parentGroupName\":\"7360f7e53c05308a5787\",\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"920935b21a80e69c0b24\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0.319287515821177,\"y\":10.162089537433982,\"z\":4000,\"width\":106.01823708206688,\"height\":73.9209726443769,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"updated_pro_pic9649482771729734.png\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"34D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'https://www.strava.com/athletes/3405284'\"}}}}}]}},\"parentGroupName\":\"7360f7e53c05308a5787\",\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 73.92,
           "width": 106.02,
@@ -132,7 +132,7 @@
           "z": 4000.00
         },
         {
-          "config": "{\"name\":\"fbb22ad705be1d563c87\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.917120122403325,\"y\":0,\"z\":1000,\"width\":232.31718061674007,\"height\":95.85903083700441,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava@logotyp.us2540401456727168.png\"}}}}}]}},\"parentGroupName\":\"7360f7e53c05308a5787\",\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"fbb22ad705be1d563c87\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.917120122403325,\"y\":0,\"z\":1000,\"width\":232.31718061674007,\"height\":95.85903083700441,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava@logotyp.us2540401456727168.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'https://www.strava.com/athletes/3405284'\"}}}}}]}},\"parentGroupName\":\"7360f7e53c05308a5787\",\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 95.86,
           "width": 232.32,
@@ -222,7 +222,7 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"6554f10aaa767b565e79\",\"layouts\":[{\"id\":0,\"position\":{\"height\":96.60377358490565,\"width\":231.94588921463625,\"x\":33.862913476764206,\"y\":0,\"z\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava@logotyp.us2540401456727168.png\"}}}}}]}},\"parentGroupName\":\"a5a676e909de885b1ed7\",\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"6554f10aaa767b565e79\",\"layouts\":[{\"id\":0,\"position\":{\"height\":96.60377358490565,\"width\":231.94588921463625,\"x\":33.862913476764206,\"y\":0,\"z\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"strava@logotyp.us2540401456727168.png\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'https://www.strava.com/athletes/3405284'\"}}}}}]}},\"parentGroupName\":\"a5a676e909de885b1ed7\",\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 96.60,
           "width": 231.95,
@@ -275,7 +275,7 @@
           "z": 3000.00
         },
         {
-          "config": "{\"name\":\"f277afaa916cb8111b3e\",\"layouts\":[{\"id\":0,\"position\":{\"height\":74.49527542851744,\"width\":105.84879778450707,\"x\":0.3187772276491667,\"y\":10.241040288557219,\"z\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"updated_pro_pic9649482771729734.png\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"34D\"}}}}}]}},\"parentGroupName\":\"a5a676e909de885b1ed7\",\"howCreated\":\"InsertVisualButton\"}",
+          "config": "{\"name\":\"f277afaa916cb8111b3e\",\"layouts\":[{\"id\":0,\"position\":{\"height\":74.49527542851744,\"width\":105.84879778450707,\"x\":0.3187772276491667,\"y\":10.241040288557219,\"z\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"updated_pro_pic9649482771729734.png\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"34D\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'https://www.strava.com/athletes/3405284'\"}}}}}]}},\"parentGroupName\":\"a5a676e909de885b1ed7\",\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 74.50,
           "width": 105.85,
