@@ -1,4 +1,4 @@
-.env.txt
+.env
 __pycache__/
 strava_activities.csv
 strava_tokens.json
