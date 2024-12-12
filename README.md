@@ -67,14 +67,16 @@ This project leverages Strava's API to retrieve activity data, process it, and e
    ```bash
    python _Main.py
    ```
+   If you have not previously authorized the project, you will be routed to an authorization prompt on Strava's website. Grant authorization and copy & paste the URL into the input prompt in the Python terminal.
+   The application will parse the authorization code from the pasted URL and update your env file.
 
-   This will authenticate with the Strava API, fetch activity data, and export it to a CSV file.
+   Execute the _Main.py script once more, and your Strava activities will be extracted and saved as a local CSV file.
 
-2. **Review the output**:
+1. **Review the output**:
 
    Check the `strava_activities.csv` file containing the processed activity data.
 
-3. **Open the file 'Strava Report.PBIP' in the 'Report' folder of the project directory.**
+2. **Open the file 'Strava Report.PBIP' in the 'Report' folder of the project directory.**
 
    You will need to modify the connection string of the 'strava_activities' file so it matches the save location of your locally stored strava_activities.csv file.
    After the connection is updated, the report will refresh with your Strava data. 
