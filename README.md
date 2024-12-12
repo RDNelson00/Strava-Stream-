@@ -4,6 +4,9 @@ This project provides tools for retrieving data from the Strava API and processi
 
 ---
 
+![My visualized Strava data](C:\Users\rnelson\OneDrive - Curant Health\Pictures\Screenshots\Screenshot 2024-12-12 154856.png")
+
+
 
 ## Table of Contents
 
