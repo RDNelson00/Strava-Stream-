@@ -4,14 +4,14 @@ This project provides tools for retrieving data from the Strava API and processi
 
 ---
 
+
 ## Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [Dependencies](#dependencies)
-3. [Features](#features)
-4. [Installation](#installation)
-5. [Configuration](#configuration)
-6. [Usage](#usage)
+1. [Project Overview](#project-overview)  
+2. [Features](#features)  
+3. [Installation](#installation)  
+4. [Configuration](#configuration)  
+5. [Usage](#usage)  
    
 
 ---
@@ -38,7 +38,7 @@ This project leverages Strava's API to retrieve activity data, process it, and e
    ```
 
 
-2. **Install dependencies**:
+2. **Dependencies**:
 
    ```bash
    pip install -r requirements.txt
