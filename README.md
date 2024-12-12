@@ -2,9 +2,7 @@
 
 This project provides tools for retrieving data from the Strava API and processing it for analysis. The code is designed to facilitate the extraction, transformation, and loading (ETL) of Strava activity data into a structured format, enabling further analysis and visualization.
 
----
-
-![My visualized Strava data](C:\Users\rnelson\OneDrive - Curant Health\Pictures\Screenshots\Screenshot 2024-12-12 154856.png")
+---![My visualized Strava data](https://github.com/user-attachments/assets/fc452f7c-74bb-46f8-882c-c419da843448)
 
 
 
