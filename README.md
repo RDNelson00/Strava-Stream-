@@ -7,12 +7,11 @@ This project provides tools for retrieving data from the Strava API and processi
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Configuration](#configuration)
-5. [Usage](#usage)
-6. [Project Structure](#project-structure)
-7. [Dependencies](#dependencies)
+2. [Dependencies](#dependencies)
+3. [Features](#features)
+4. [Installation](#installation)
+5. [Configuration](#configuration)
+6. [Usage](#usage)
    
 
 ---
@@ -81,12 +80,4 @@ This project leverages Strava's API to retrieve activity data, process it, and e
    After the connection is updated, the report will refresh with your Strava data. 
 
 
-## Dependencies
-
-
-Install dependencies with:
-
-```bash
-pip install -r requirements.txt
-```
 
