@@ -34,8 +34,8 @@ This project leverages Strava's API to retrieve activity data, process it, and e
 1. **Clone the repository**:
 
    ```bash
-   git clone [https://github.com/your-username/strava-api-pipeline](https://github.com/RDNelson00/Strava-Stream-).git
-   cd Strava-Stream-
+   git clone https://github.com/RDNelson00/Strava-Stream-.git
+
    ```
 
 
@@ -50,16 +50,15 @@ This project leverages Strava's API to retrieve activity data, process it, and e
 1. **Set up Strava API credentials**:
 
    - Go to the [Strava API Settings](https://www.strava.com/settings/api) and create an application.
-   - Obtain the `Client ID`, `Client Secret`, and `Refresh Token`.
+   - Obtain the `Client ID` and `Client Secret`.
 
 2. **Update the configuration file**:
 
-   Create a `.env` file in the root directory with the following content:
+   Open the `.env` file in the root directory update the following values:
 
    ```env
    CLIENT_ID=your_client_id
    CLIENT_SECRET=your_client_secret
-   REFRESH_TOKEN=your_refresh_token
    ```
 
 ## Usage
@@ -67,7 +66,7 @@ This project leverages Strava's API to retrieve activity data, process it, and e
 1. **Run the data extraction script**:
 
    ```bash
-   python main.py
+   python _Main.py
    ```
 
    This will authenticate with the Strava API, fetch activity data, and export it to a CSV file.
@@ -76,22 +75,18 @@ This project leverages Strava's API to retrieve activity data, process it, and e
 
    Check the `strava_activities.csv` file containing the processed activity data.
 
+3. **Open the file 'Strava Report.PBIP' in the 'Report' folder of the project directory.**
+
+   You will need to modify the connection string of the 'strava_activities' file so it matches the save location of your locally stored strava_activities.csv file.
+   After the connection is updated, the report will refresh with your Strava data. 
+
 
 ## Dependencies
 
-- **Python 3.8+**
-- **Libraries**:
-  - `requests`
-  - `pandas`
-  - `python-dotenv`
 
 Install dependencies with:
 
 ```bash
 pip install -r requirements.txt
 ```
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
