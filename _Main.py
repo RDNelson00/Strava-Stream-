@@ -10,18 +10,21 @@ from dotenv import load_dotenv
 
 token_file = 'strava_tokens.json'
 
-# Function to check if the user has granted authorization
+# Function to check if th e user has granted authorization
 def is_authorized():
     load_dotenv()
     auth_code = os.getenv("auth_code")  # Check for auth_code in .env
     return auth_code is not None
+    
 
 def get_token_expiry():
-    with open(token_file, 'r') as f:
-        tokens = json.load(f)
-        return tokens.get('expires_at')  # Extract the refresh token
-        
-
+    try:
+        with open(token_file, 'r') as f:
+            tokens = json.load(f)
+            return tokens.get('expires_at')  # Extract the refresh token
+    except:         
+        print("Token file not found. Getting tokens.")
+        GetToken.main()
 
 print(f"Auth code from environment: {os.getenv('auth_code')}")
 
@@ -29,7 +32,13 @@ print(f"Auth code from environment: {os.getenv('auth_code')}")
 # Main Logic
 if not is_authorized():
     print("Authorization not found. Starting the authorization flow...")
-    GetAuthorization.main()  
+    GetAuthorization.main()
+    print("Starting token flow")
+    GetToken.main()
+    print("Fetching activities.")
+    GetActivities.main()
+
+
 else:
     print("Authorization found. Checking token status...")
 
