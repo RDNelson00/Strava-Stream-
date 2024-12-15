@@ -15,6 +15,7 @@ def is_authorized():
     load_dotenv()
     auth_code = os.getenv("auth_code")  # Check for auth_code in .env
     return auth_code is not None
+    
 
 def get_token_expiry():
     try:
@@ -31,7 +32,12 @@ print(f"Auth code from environment: {os.getenv('auth_code')}")
 # Main Logic
 if not is_authorized():
     print("Authorization not found. Starting the authorization flow...")
-    GetAuthorization.main()  
+    GetAuthorization.main()
+    print("Starting token flow")
+    GetToken.main()
+    print("Fetching activities.")
+    GetActivities.main()
+
 
 else:
     print("Authorization found. Checking token status...")
