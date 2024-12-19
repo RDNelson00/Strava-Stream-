@@ -1,0 +1,40 @@
+table Time
+	lineageTag: fcec7c9d-6538-4e07-a861-6566f3bffe6d
+
+	column Time
+		dataType: dateTime
+		formatString: hh:nn AM/PM
+		lineageTag: c3ddcd26-f81e-413a-afeb-2b3e2b1c80c4
+		summarizeBy: none
+		sourceColumn: Time
+		sortByColumn: 'Sort Order'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Sort Order'
+		dataType: int64
+		formatString: 0
+		lineageTag: ce64df6a-07f7-4c46-84fe-36ae48574456
+		summarizeBy: none
+		sourceColumn: Sort Order
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Time = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("TY+7DYAwFANXQakpXv4JHQMg0SP2XwNko2fKOze+6woxbWbLfoQ1xHCvr3BOYO0ZnJ0LuDhXcHVu4Obcwd15gIfzBE/9MR4yme+iPkaeZMUJk5VBUdRBURVC0VRC0ZVCMdRCMRUDkUw1FFE5FOmXQ5N/OTTv1/sB", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Time = _t, Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Time", type time}, {"Column1", Int64.Type}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1", "Sort Order"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,56 @@
+table Calendar
+	lineageTag: 24941d33-c219-4ab6-af7f-884df2cbf314
+
+	column Date
+		formatString: Short Date
+		lineageTag: 83ebfbcc-205b-48a3-afcd-93e0f238bd4f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: cd514271-d2d4-4124-9853-22ec31480408
+			defaultHierarchy: LocalDateTable_d888f68e-757d-4514-9eeb-cb09be254f39.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Weekday Number' = WEEKDAY('Calendar'[Date],1)
+		formatString: 0
+		lineageTag: bee8ab43-1848-4ca0-be8a-3a3a86aafe2c
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Weekday = FORMAT('Calendar'[Date],"ddd")
+		lineageTag: 9445515c-e076-4e91-93a2-3a59fae03fbe
+		summarizeBy: none
+		sortByColumn: 'Weekday Number'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week Beginning' = ```
+			[date] - WEEKDAY([date], 2) + 1
+			
+			```
+		formatString: Short Date
+		lineageTag: ede2e048-7309-45d0-b6d1-5c52765dca2c
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 04cde49a-ac1d-4243-86ec-81cd4f246d25
+			defaultHierarchy: LocalDateTable_fd5b1e45-db02-4ba7-87b4-bcc5475270f0.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Calendar = calculated
+		mode: import
+		source = CALENDARAUTO(12)
+
+	annotation PBI_Id = 17e78c87d4f34916b8bbe35c0039791d
+

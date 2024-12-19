@@ -1,0 +1,32 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["strava_activities","_Metrics","Time","Workout Type"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.138.1452.0 (24.11)
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table strava_activities
+ref table DateTableTemplate_f86241d2-60f7-43bf-a7e7-4fc6936dbda1
+ref table _Metrics
+ref table Time
+ref table 'Workout Type'
+ref table Calendar
+ref table LocalDateTable_d888f68e-757d-4514-9eeb-cb09be254f39
+ref table LocalDateTable_586965cd-d908-441a-987b-2111ac5778fd
+ref table LocalDateTable_fd5b1e45-db02-4ba7-87b4-bcc5475270f0
+ref table Races
+ref table LocalDateTable_4fffd448-2a80-4187-b2fa-640521726540
+ref table LocalDateTable_a3c7040c-13db-48b3-9be4-1290cb95674a
+ref table LocalDateTable_3a5a615d-5dc5-45ef-8d17-a58f3db14430
+
+ref cultureInfo en-US
+

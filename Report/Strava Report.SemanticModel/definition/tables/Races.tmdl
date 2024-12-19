@@ -1,0 +1,391 @@
+table Races
+	lineageTag: c9598a4a-7709-4fde-a9a1-04eaaad4c0e3
+
+	column athlete
+		lineageTag: dc9ef9a5-83c3-459b-bb99-316f14e44a66
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[athlete]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Activity Name'
+		lineageTag: 6ae37ed1-8dd2-4bb6-aedf-9241c893359a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Activity Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Distance (m)'
+		lineageTag: e6089d23-e98b-4f71-ab8f-e4ac4bef257c
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[Distance (m)]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Moving Time (sec)'
+		formatString: 0
+		lineageTag: a706eacc-d395-4e69-bbe3-301deefd25ce
+		summarizeBy: sum
+		sourceColumn: strava_activities[Moving Time (sec)]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Elapsed Time (sec)'
+		formatString: 0
+		lineageTag: d2733aca-c497-4b38-96ea-a01313f99b0a
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[Elapsed Time (sec)]
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_elevation_gain
+		lineageTag: 1a3f8b85-1817-4519-b34f-da8a712e5f32
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[total_elevation_gain]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Activity Type'
+		lineageTag: 0b2fd599-1a03-4252-9382-3d76f7b285b1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Activity Type]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Activity Id'
+		formatString: 0
+		lineageTag: a1082589-4d87-4af5-83f4-0c6e45dfde38
+		summarizeBy: count
+		isNameInferred
+		sourceColumn: strava_activities[Activity Id]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Start Date (Local)'
+		formatString: General Date
+		lineageTag: 7ea45c5f-b6e1-4c20-8c33-6731003c239a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Start Date (Local)]
+
+		variation Variation
+			isDefault
+			relationship: dfe6708d-c2e1-4284-9b2a-5c0a6de3664f
+			defaultHierarchy: LocalDateTable_4fffd448-2a80-4187-b2fa-640521726540.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column timezone
+		lineageTag: eff857af-3aba-4107-a418-caa925025eef
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[timezone]
+
+		annotation SummarizationSetBy = Automatic
+
+	column utc_offset
+		formatString: 0
+		lineageTag: 268707e2-8b19-4f3e-ac8c-7765f63ca453
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[utc_offset]
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_city
+		lineageTag: 94158b4a-5b3f-4564-94f6-647f2484d736
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[location_city]
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_state
+		lineageTag: e536a6bc-e54c-41f5-9756-5743a87b0f84
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[location_state]
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_country
+		lineageTag: 04468987-ea02-47e7-b1b6-7ce0922d89cb
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[location_country]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Kudos Count'
+		formatString: 0
+		lineageTag: e7ae8de9-6865-4e34-b27f-63030451b8cc
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[Kudos Count]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comment Count'
+		formatString: 0
+		lineageTag: 6ccc789b-1c2b-45e9-9dab-5ca35727940b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[Comment Count]
+
+		annotation SummarizationSetBy = Automatic
+
+	column photo_count
+		formatString: 0
+		lineageTag: 7dce51b8-1031-4528-83dd-5fed08ce8c6f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[photo_count]
+
+		annotation SummarizationSetBy = Automatic
+
+	column private
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d6ec2454-b564-4388-9282-de6eafb5708c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[private]
+
+		annotation SummarizationSetBy = Automatic
+
+	column visibility
+		lineageTag: 064e3ff4-27f9-4ee2-a895-a87594679297
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[visibility]
+
+		annotation SummarizationSetBy = Automatic
+
+	column flagged
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 22a65498-d890-4ad4-9c11-646da57f0d40
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[flagged]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Average Heartrate'
+		lineageTag: 01c267e4-26f6-4dea-a916-3e121aedeaf7
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[Average Heartrate]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Max Heartrate'
+		formatString: 0
+		lineageTag: ffd51d5f-35a9-40e4-8f5e-9cf8816ac5b7
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[Max Heartrate]
+
+		annotation SummarizationSetBy = Automatic
+
+	column elev_high
+		lineageTag: a3ebd7e7-f364-49db-85fa-c4153be21d33
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[elev_high]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column elev_low
+		lineageTag: b069d950-da60-4b22-8631-af9dba180282
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[elev_low]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Suffer Score'
+		formatString: 0
+		lineageTag: d7f9f709-531a-4a54-a3f8-d17fbf5228e4
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[Suffer Score]
+
+		annotation SummarizationSetBy = Automatic
+
+	column workout_type
+		lineageTag: 07556f0f-858c-4c7a-aa61-7c23abde4d60
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[workout_type]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column average_cadence
+		lineageTag: bfb911d6-8b9c-4674-bbc2-46a5a6364948
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[average_cadence]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Start Lat'
+		lineageTag: 87aac673-5920-44d2-b584-72373a124c5d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Start Lat]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Start Long'
+		lineageTag: 54d4ba84-38d7-47e5-a724-0a5d6387f9da
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Start Long]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Web Link to Activity'
+		lineageTag: 585d1809-9034-41c5-99f8-6848631aba9c
+		dataCategory: WebUrl
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Web Link to Activity]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Elapsed Time'
+		lineageTag: 88414eb2-a987-4a4e-98d0-f461ed1458b7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Elapsed Time]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Distance (mi)'
+		lineageTag: 552084d4-61f2-4cff-9549-9ef0b58159f7
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[Distance (mi)]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Local Start Time'
+		formatString: General Date
+		lineageTag: c93b2d9e-7037-4667-94b3-6e7ecf2f85a7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Local Start Time]
+
+		variation Variation
+			isDefault
+			relationship: 6ecb7f3a-9d23-47ba-85d9-2058b33f0769
+			defaultHierarchy: LocalDateTable_a3c7040c-13db-48b3-9be4-1290cb95674a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Polyline
+		lineageTag: 258fb2b6-6a53-4772-9396-b19ef7ea7d9f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Polyline]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week Sort'
+		formatString: 0
+		lineageTag: 857f1801-1f10-48f8-8126-dbb88b2967cf
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: strava_activities[Week Sort]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Race Distance'
+		lineageTag: 5e661874-35d6-4ba3-ae43-68476df0755c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Race Distance]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		formatString: Short Date
+		lineageTag: ecde6048-165a-48b8-9ffb-b11a0b6afbb7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Date]
+
+		variation Variation
+			isDefault
+			relationship: 43d4e2f9-4bad-466e-9f3f-de34262a8bc7
+			defaultHierarchy: LocalDateTable_3a5a615d-5dc5-45ef-8d17-a58f3db14430.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column isPR = ```
+			
+			IF(
+			    'Races'[Elapsed Time (sec)] = 
+			        CALCULATE(
+			            MIN('Races'[Elapsed Time (sec)]),
+			            FILTER(
+			                'Races',
+			                'Races'[Race Distance] = EARLIER('Races'[Race Distance])
+			            )
+			        ),
+			    1,
+			    0
+			)
+			
+			```
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3eff8888-962e-4189-a836-415ac769eec9
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Moving Time'
+		lineageTag: 8179e903-9032-4221-b5f2-25db6e8fc400
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Moving Time]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Races = calculated
+		mode: import
+		source = ```
+				
+				CALCULATETABLE(
+				    strava_activities,
+				        'Workout Type'[Workout Type] = "Race"
+				)
+				
+				```
+
+	annotation PBI_Id = 8a6a0c6c777248b282fcab0f4bddff67
+

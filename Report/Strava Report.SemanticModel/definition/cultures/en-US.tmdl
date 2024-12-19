@@ -1,0 +1,7142 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "3.5.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "races.activity_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Races",
+			          "ConceptualProperty": "Activity Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Race Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "races.distance_mi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Races",
+			          "ConceptualProperty": "Distance (mi)"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "strava_activity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "strava activity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "strava_activities": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "strava movement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "strava commotion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "strava action": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "strava motion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "strava bustle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "strava pursuit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "strava hobby": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "strava occupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "strava pastime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "strava interest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.activity_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Activity Id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "activity id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "activity": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "activity identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "activity identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "activity identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "activity credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "movement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "commotion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "action": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "motion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bustle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pursuit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.activity_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Activity Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "activity name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "activity": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "activity nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "activity title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "activity label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "activity tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "movement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "commotion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "action": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "motion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bustle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pursuit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.activity_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Activity Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "activity type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "activity category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "activity genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "activity manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "activity variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "activity brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "activity class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.athlete": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "athlete"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "athlete": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sportsperson": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "contestant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "competitor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "player": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "participant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.average_cadence": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "average_cadence"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average cadence": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average_cadence": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cadence": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average tempo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average rhythm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "tempo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rhythm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "average pace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average beat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average pulse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "average stroke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "pace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "beat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.average_heartrate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Average Heartrate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average heartrate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Avg. Heartrate": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.comment_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Comment Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comment count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "comment amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "clarification count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "commentary count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "explanation count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "feedback count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "observation count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "note count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.distance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Distance (m)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "distance (m)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "coldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "aloofness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "detachment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "remoteness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reserve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "vastness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "void": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "gap": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "meter",
+			        "m"
+			      ]
+			    },
+			    "strava_activity.distance1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Distance (mi)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "distance (mi)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "coldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "aloofness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "detachment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "remoteness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reserve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "vastness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "void": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "gap": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "mile",
+			        "mi"
+			      ]
+			    },
+			    "strava_activity.elapsed_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Elapsed Time (sec)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "elapsed time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "elapsed time (sec)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "elapsed duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "elapsed interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "elapsed moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "elapsed period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "elapsed timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "elapsed duration (sec)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "elapsed interval (sec)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "elapsed moment (sec)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "elapsed period (sec)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "elapsed timetable (sec)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "second",
+			        "sec"
+			      ]
+			    },
+			    "strava_activity.elapsed_time1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Elapsed Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "elapsed time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "elapsed duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "elapsed interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "elapsed moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "elapsed period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "elapsed timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.elev_high": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "elev_high"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "elev high": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "elev_high": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.elev_low": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "elev_low"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "elev low": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "elev_low": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.flagged": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "flagged"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "flagged": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.kudos_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Kudos Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kudos count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "kudos amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.local_start_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Local Start Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "local start time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "local start duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "local start interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "local start moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "local start period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "local start timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.location_city": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "location_city"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location city": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location_city": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "city": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "location location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location metropolis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location municipality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "metropolis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "municipality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "location town": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "location metropolitan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "town": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "metropolitan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.location_country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "location_country"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location_country": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "country": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "location nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locality country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "placement country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "scene country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "venue country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "address country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "place country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.location_state": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "location_state"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location state": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location_state": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "": {}
+			        },
+			        {
+			          "location location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location territory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "territory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "location condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.max_heartrate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Max Heartrate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max heartrate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "maximum heartrate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.moving_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Moving Time (sec)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "moving time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moving_time": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "moving duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "moving interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "moving moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "moving period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "moving timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.photo_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "photo_count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "photo count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "photo_count": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "photo amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.polyline": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Polyline"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "polyline": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.private": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "private"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "private": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "remote": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "self-contained": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.start_date.variation.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date.variation.date_hierarchy.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "commencement date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "inception date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "kickoff date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "start moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "beginning date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "first date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "initiation date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "launch date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "start period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date.variation.date_hierarchy.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "start date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "start mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "commencement date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "inception date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "kickoff date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "start moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "beginning date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date.variation.date_hierarchy.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "start date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "start qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "commencement date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "inception date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "kickoff date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "start moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "beginning date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date.variation.date_hierarchy.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "start date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "start yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "commencement date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "inception date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "kickoff date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "start moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "beginning date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date_local": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Start Date (Local)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start date (local)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "start date": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "commencement date (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.64
+			          }
+			        },
+			        {
+			          "inception date (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.64
+			          }
+			        },
+			        {
+			          "kickoff date (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.64
+			          }
+			        },
+			        {
+			          "start moment (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "beginning date (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.621
+			          }
+			        },
+			        {
+			          "first date (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.621
+			          }
+			        },
+			        {
+			          "initiation date (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.621
+			          }
+			        },
+			        {
+			          "launch date (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.621
+			          }
+			        },
+			        {
+			          "start period (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "kick off date (local)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.512
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date_local.variation.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date (Local)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start date hierarchy ( local )": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date_local.variation.date_hierarchy.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date (Local)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start day ( local )": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date (local) day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start day": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date_local.variation.date_hierarchy.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date (Local)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start month ( local )": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date (local) month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start month": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "start mth ( local )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date_local.variation.date_hierarchy.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date (Local)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start quarter ( local )": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date (local) quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start quarter": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "start qtr ( local )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.693
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_date_local.variation.date_hierarchy.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "VariationSource": "Start Date (Local)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start year ( local )": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date (local) year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start year": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "start yr ( local )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "strava_activity.start_lat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Start Lat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start lat": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.start_long": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Start Long"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start long": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.suffer_score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Suffer Score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "suffer score": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "suffer notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "suffer slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "suffer groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "suffer nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "suffer cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "suffer mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "suffer total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "suffer tally": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "suffer grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "suffer result": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.timezone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "timezone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "timezone": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.total_elevation_gain": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "total_elevation_gain"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total elevation gain": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total_elevation_gain": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "gain": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "elevation gain": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate elevation gain": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall elevation gain": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "total elevation improvement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "total elevation expansion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "total elevation addition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "total elevation achievement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "elevation improvement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "elevation expansion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "elevation addition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "elevation achievement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.utc_offset": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "utc_offset"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "utc offset": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "utc_offset": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "utc equalizer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "utc compensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "utc counterbalance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "utc balance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "utc counterpoise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "utc equipoise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "utc counterweight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.visibility": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "visibility"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "visibility": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "discernibility": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "perceptibility": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "conspicuousness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "distinguishability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reflectiveness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reflectivity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "brightness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "luminosity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "horizon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.web_link_to_activity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "Web Link to Activity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "web link to activity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "link": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "web link": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "web connection to activity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "web relation to activity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "web association to activity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "web relationship to activity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "web linkage to activity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "web nexus to activity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "web connection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "web relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "web association": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "web relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "strava_activity.workout_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "strava_activities",
+			          "ConceptualProperty": "workout_type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "workout type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "workout_type": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "workout category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workout genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workout manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workout variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "workout brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "workout class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "time.avg__pace_min_mi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Metrics",
+			          "ConceptualProperty": "Avg. Pace"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg. pace (min/mi)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "avg. pace": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "avg. pace (min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "avg . pace ( min mi )": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mi)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average . pace (min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "avg. pace ( minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "time.sort_order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Time",
+			          "ConceptualProperty": "Sort Order"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sort order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sort instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sort direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sort edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "sort command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "time.time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Time",
+			          "ConceptualProperty": "Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Start Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "time.total_distance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Metrics",
+			          "ConceptualProperty": "Total Distance (mi)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total distance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total distance (mi)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate distance (mi)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall distance (mi)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "aggregate distance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall distance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total coldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total aloofness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total detachment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total remoteness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total reserve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "Total Mileage": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "mile",
+			        "mi"
+			      ]
+			    },
+			    "v_Metrics_metrics": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Metrics"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_metrics": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "v_Metrics_metrics.activity_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Metrics",
+			          "ConceptualProperty": "Activity Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "activity count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "activity amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "v_Metrics_metrics.total_time_spent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Metrics",
+			          "ConceptualProperty": "Total Time Spent (Hours)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total time spent": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total time spent (Hours)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total duration spent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "total interval spent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "total moment spent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "total period spent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "total timetable spent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "aggregate time spent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall time spent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "hour"
+			      ]
+			    },
+			    "workout_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Workout Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "workout type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "workout category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workout genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workout manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workout variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "workout brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "workout class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "workout_type.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Workout Type",
+			          "ConceptualProperty": "Id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "workout_type.workout_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Workout Type",
+			          "ConceptualProperty": "Workout Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "workout type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "workout type name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "workout category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workout genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workout manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workout variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "workout brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "workout class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    }
+			  },
+			  "Relationships": {
+			    "strava_activity_has_P_rs": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "P_rs": {
+			          "Target": {
+			            "Entity": "P_rs"
+			          }
+			        },
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "P_rs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_P_RSs"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_achievement_count": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.achievement_count": {
+			          "Target": {
+			            "Entity": "strava_activity.achievement_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.achievement_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_achievement_counts"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_activity_id": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.activity_id": {
+			          "Target": {
+			            "Entity": "strava_activity.activity_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.activity_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_activity_ids"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_activity_name": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.activity_name": {
+			          "Target": {
+			            "Entity": "strava_activity.activity_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.activity_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_activity_names"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_activity_type": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.activity_type": {
+			          "Target": {
+			            "Entity": "strava_activity.activity_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.activity_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_activity_types"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_athlete": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.athlete": {
+			          "Target": {
+			            "Entity": "strava_activity.athlete"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.athlete"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_athletes"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_athlete_count": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.athlete_count": {
+			          "Target": {
+			            "Entity": "strava_activity.athlete_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.athlete_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_athlete_counts"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_average_cadence": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.average_cadence": {
+			          "Target": {
+			            "Entity": "strava_activity.average_cadence"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.average_cadence"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_average_cadences"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_average_heartrate": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.average_heartrate": {
+			          "Target": {
+			            "Entity": "strava_activity.average_heartrate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.average_heartrate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_average_heartrates"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_average_speed": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.average_speed": {
+			          "Target": {
+			            "Entity": "strava_activity.average_speed"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.average_speed"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_average_speeds"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_comment_count": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.comment_count": {
+			          "Target": {
+			            "Entity": "strava_activity.comment_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.comment_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_comment_counts"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_distance": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.distance": {
+			          "Target": {
+			            "Entity": "strava_activity.distance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.distance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_distances1"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_distance1": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.distance1": {
+			          "Target": {
+			            "Entity": "strava_activity.distance1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.distance1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_distances"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_elapsed_time1": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.elapsed_time1": {
+			          "Target": {
+			            "Entity": "strava_activity.elapsed_time1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.elapsed_time1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_elapsed_times"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_elev_high": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.elev_high": {
+			          "Target": {
+			            "Entity": "strava_activity.elev_high"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.elev_high"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_elev_highs"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_elev_low": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.elev_low": {
+			          "Target": {
+			            "Entity": "strava_activity.elev_low"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.elev_low"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_elev_lows"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_end_latlng": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.end_latlng": {
+			          "Target": {
+			            "Entity": "strava_activity.end_latlng"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.end_latlng"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_end_latlngs"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_flagged": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.flagged": {
+			          "Target": {
+			            "Entity": "strava_activity.flagged"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.flagged"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_flagged"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_gear_id": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.gear_id": {
+			          "Target": {
+			            "Entity": "strava_activity.gear_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.gear_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_gear_ids"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_kudos_count": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.kudos_count": {
+			          "Target": {
+			            "Entity": "strava_activity.kudos_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.kudos_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_kudos_counts"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_local_start_time": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.local_start_time": {
+			          "Target": {
+			            "Entity": "strava_activity.local_start_time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.local_start_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_local_start_times"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_location_city": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.location_city": {
+			          "Target": {
+			            "Entity": "strava_activity.location_city"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.location_city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_location_cities"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_location_country": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.location_country": {
+			          "Target": {
+			            "Entity": "strava_activity.location_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.location_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_location_countries"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_location_state": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.location_state": {
+			          "Target": {
+			            "Entity": "strava_activity.location_state"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.location_state"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_location_states"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_manual": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.manual": {
+			          "Target": {
+			            "Entity": "strava_activity.manual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.manual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_manuals"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_map": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.map": {
+			          "Target": {
+			            "Entity": "strava_activity.map"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.map"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_maps"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_max_heartrate": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.max_heartrate": {
+			          "Target": {
+			            "Entity": "strava_activity.max_heartrate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.max_heartrate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_max_heartrates"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_max_speed": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.max_speed": {
+			          "Target": {
+			            "Entity": "strava_activity.max_speed"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.max_speed"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_max_speeds"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_moving_time": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.moving_time": {
+			          "Target": {
+			            "Entity": "strava_activity.moving_time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.moving_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_moving_times"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_photo_count": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.photo_count": {
+			          "Target": {
+			            "Entity": "strava_activity.photo_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.photo_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_photo_counts"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_polyline": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.polyline": {
+			          "Target": {
+			            "Entity": "strava_activity.polyline"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.polyline"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_polylines"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_pr_count": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.pr_count": {
+			          "Target": {
+			            "Entity": "strava_activity.pr_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.pr_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_pr_counts"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_private": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.private": {
+			          "Target": {
+			            "Entity": "strava_activity.private"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.private"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_privates"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_resource_state": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.resource_state": {
+			          "Target": {
+			            "Entity": "strava_activity.resource_state"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.resource_state"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_resource_states"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_sport_type": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.sport_type": {
+			          "Target": {
+			            "Entity": "strava_activity.sport_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.sport_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_sport_types"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_start_date": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.start_date": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_start_dates"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_start_date_local": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.start_date_local": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date_local"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_start_date_local"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_start_lat": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.start_lat": {
+			          "Target": {
+			            "Entity": "strava_activity.start_lat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_lat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_start_lats"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_start_latlng": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.start_latlng": {
+			          "Target": {
+			            "Entity": "strava_activity.start_latlng"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_latlng"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_start_latlngs"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_start_long": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.start_long": {
+			          "Target": {
+			            "Entity": "strava_activity.start_long"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_long"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_start_longs"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_suffer_score": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.suffer_score": {
+			          "Target": {
+			            "Entity": "strava_activity.suffer_score"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.suffer_score"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_suffer_score"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_time": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "time": {
+			          "Target": {
+			            "Entity": "time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_times"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "time"
+			            },
+			            "Object": {
+			              "Role": "strava_activity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "times_have_strava_activities"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_time_avg__pace_min_mi": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "time.avg__pace_min_mi": {
+			          "Target": {
+			            "Entity": "time.avg__pace_min_mi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "time.avg__pace_min_mi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_avg__pace_min_mi"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_time_total_distance": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "time.total_distance": {
+			          "Target": {
+			            "Entity": "time.total_distance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "time.total_distance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_total_distance"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_timezone": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.timezone": {
+			          "Target": {
+			            "Entity": "strava_activity.timezone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.timezone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_timezones"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_total_elevation_gain": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.total_elevation_gain": {
+			          "Target": {
+			            "Entity": "strava_activity.total_elevation_gain"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.total_elevation_gain"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_total_elevation_gains"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_utc_offset": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.utc_offset": {
+			          "Target": {
+			            "Entity": "strava_activity.utc_offset"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.utc_offset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_utc_offsets"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_v_Metrics_metrics_activity_count": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "v_Metrics_metrics.activity_count": {
+			          "Target": {
+			            "Entity": "v_Metrics_metrics.activity_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "v_Metrics_metrics.activity_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_activity_count"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_v_Metrics_metrics_total_time_spent": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "v_Metrics_metrics.total_time_spent": {
+			          "Target": {
+			            "Entity": "v_Metrics_metrics.total_time_spent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "v_Metrics_metrics.total_time_spent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_total_time_spent"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_visibility": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.visibility": {
+			          "Target": {
+			            "Entity": "strava_activity.visibility"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.visibility"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_visibilities"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_web_link_to_activity": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.web_link_to_activity": {
+			          "Target": {
+			            "Entity": "strava_activity.web_link_to_activity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.web_link_to_activity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_web_link_to_activity"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_weekday": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "weekday": {
+			          "Target": {
+			            "Entity": "weekday"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "weekday"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_weekdays"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "weekday"
+			            },
+			            "Object": {
+			              "Role": "strava_activity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "weekdays_have_strava_activities"
+			        }
+			      ]
+			    },
+			    "strava_activity_has_workout_type": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "workout_type": {
+			          "Target": {
+			            "Entity": "workout_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Object": {
+			              "Role": "workout_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_have_workout_types"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "workout_type"
+			            },
+			            "Object": {
+			              "Role": "strava_activity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "workout_types_have_strava_activities"
+			        }
+			      ]
+			    },
+			    "strava_activity_in_location_city": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.location_city": {
+			          "Target": {
+			            "Entity": "strava_activity.location_city"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "strava_activity.location_city"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "strava_activity.location_city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_are_in_location_cities"
+			        }
+			      ]
+			    },
+			    "strava_activity_in_location_country": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.location_country": {
+			          "Target": {
+			            "Entity": "strava_activity.location_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "strava_activity.location_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "strava_activity.location_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_are_in_location_countries"
+			        }
+			      ]
+			    },
+			    "strava_activity_in_location_state": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.location_state": {
+			          "Target": {
+			            "Entity": "strava_activity.location_state"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "strava_activity.location_state"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "strava_activity.location_state"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "strava_activities_are_in_location_states"
+			        }
+			      ]
+			    },
+			    "strava_activity_is_flagged": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.flagged": {
+			          "Target": {
+			            "Entity": "strava_activity.flagged"
+			          }
+			        }
+			      },
+			      "Conditions": [
+			        {
+			          "Target": {
+			            "Role": "strava_activity.flagged"
+			          },
+			          "Operator": "Equals",
+			          "Value": {
+			            "Boolean": [
+			              true
+			            ]
+			          }
+			        }
+			      ],
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "strava_activity"
+			            },
+			            "Adjectives": [
+			              {
+			                "flagged": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "some_strava_activities_are_flagged_strava_activities"
+			        }
+			      ]
+			    },
+			    "strava_activity_is_started_on_start_date": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity": {
+			          "Target": {
+			            "Entity": "strava_activity"
+			          }
+			        },
+			        "strava_activity.start_date": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "strava_activity.start_date"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "start": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "strava_activity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "strava_activities_are_started_on_start_dates"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_has_variation_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date"
+			          }
+			        },
+			        "strava_activity.start_date.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date.variation.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date.variation.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_dates_have_start_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_local_has_variation_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date_local": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local"
+			          }
+			        },
+			        "strava_activity.start_date_local.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local.variation.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date_local"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date_local.variation.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_local_have_start_date_hierarchy__local_"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_local_variation_date_hierarchy_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date_local.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local.variation.date_hierarchy"
+			          }
+			        },
+			        "strava_activity.start_date_local.variation.date_hierarchy.day": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local.variation.date_hierarchy.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date_local.variation.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date_local.variation.date_hierarchy.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchy__local__have_start_day__local_"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_local_variation_date_hierarchy_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date_local.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local.variation.date_hierarchy"
+			          }
+			        },
+			        "strava_activity.start_date_local.variation.date_hierarchy.month": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local.variation.date_hierarchy.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date_local.variation.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date_local.variation.date_hierarchy.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchy__local__have_start_month__local_"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_local_variation_date_hierarchy_has_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date_local.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local.variation.date_hierarchy"
+			          }
+			        },
+			        "strava_activity.start_date_local.variation.date_hierarchy.quarter": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local.variation.date_hierarchy.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date_local.variation.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date_local.variation.date_hierarchy.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchy__local__have_start_quarter__local_"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_local_variation_date_hierarchy_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date_local.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local.variation.date_hierarchy"
+			          }
+			        },
+			        "strava_activity.start_date_local.variation.date_hierarchy.year": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date_local.variation.date_hierarchy.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date_local.variation.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date_local.variation.date_hierarchy.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchy__local__have_start_year__local_"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_variation_date_hierarchy_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date.variation.date_hierarchy"
+			          }
+			        },
+			        "strava_activity.start_date.variation.date_hierarchy.day": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date.variation.date_hierarchy.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date.variation.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date.variation.date_hierarchy.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_days"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_variation_date_hierarchy_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date.variation.date_hierarchy"
+			          }
+			        },
+			        "strava_activity.start_date.variation.date_hierarchy.month": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date.variation.date_hierarchy.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date.variation.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date.variation.date_hierarchy.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_months"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_variation_date_hierarchy_has_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date.variation.date_hierarchy"
+			          }
+			        },
+			        "strava_activity.start_date.variation.date_hierarchy.quarter": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date.variation.date_hierarchy.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date.variation.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date.variation.date_hierarchy.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_quarters"
+			        }
+			      ]
+			    },
+			    "strava_activity_start_date_variation_date_hierarchy_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "strava_activities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "strava_activity.start_date.variation.date_hierarchy": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date.variation.date_hierarchy"
+			          }
+			        },
+			        "strava_activity.start_date.variation.date_hierarchy.year": {
+			          "Target": {
+			            "Entity": "strava_activity.start_date.variation.date_hierarchy.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "strava_activity.start_date.variation.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "strava_activity.start_date.variation.date_hierarchy.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_years"
+			        }
+			      ]
+			    },
+			    "time_has_sort_order": {
+			      "Binding": {
+			        "ConceptualEntity": "Time"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "time": {
+			          "Target": {
+			            "Entity": "time"
+			          }
+			        },
+			        "time.sort_order": {
+			          "Target": {
+			            "Entity": "time.sort_order"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "time"
+			            },
+			            "Object": {
+			              "Role": "time.sort_order"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "times_have_sort_orders"
+			        }
+			      ]
+			    },
+			    "time_has_time": {
+			      "Binding": {
+			        "ConceptualEntity": "Time"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "time": {
+			          "Target": {
+			            "Entity": "time"
+			          }
+			        },
+			        "time.time": {
+			          "Target": {
+			            "Entity": "time.time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "time"
+			            },
+			            "Object": {
+			              "Role": "time.time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "times_have_times"
+			        }
+			      ]
+			    },
+			    "time_is_Started_on_time": {
+			      "Binding": {
+			        "ConceptualEntity": "Time"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "time": {
+			          "Target": {
+			            "Entity": "time"
+			          }
+			        },
+			        "time.time": {
+			          "Target": {
+			            "Entity": "time.time"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "time.time"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "Start": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "times_are_Started_on_times"
+			        }
+			      ]
+			    },
+			    "workout_type_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Workout Type"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "workout_type": {
+			          "Target": {
+			            "Entity": "workout_type"
+			          }
+			        },
+			        "workout_type.id": {
+			          "Target": {
+			            "Entity": "workout_type.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "workout_type"
+			            },
+			            "Object": {
+			              "Role": "workout_type.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "workout_types_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "workout_type"
+			            },
+			            "Name": {
+			              "Role": "workout_type.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_workout_types"
+			        }
+			      ]
+			    },
+			    "workout_type_has_workout_type": {
+			      "Binding": {
+			        "ConceptualEntity": "Workout Type"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "workout_type": {
+			          "Target": {
+			            "Entity": "workout_type"
+			          }
+			        },
+			        "workout_type.workout_type": {
+			          "Target": {
+			            "Entity": "workout_type.workout_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "workout_type"
+			            },
+			            "Object": {
+			              "Role": "workout_type.workout_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "workout_types_have_workout_types"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "workout_type"
+			            },
+			            "Name": {
+			              "Role": "workout_type.workout_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "workout_types_are_names_IDs_of_workout_types"
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

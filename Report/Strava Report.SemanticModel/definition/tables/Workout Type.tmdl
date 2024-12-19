@@ -1,0 +1,31 @@
+table 'Workout Type'
+	lineageTag: c269ae87-72af-4579-8f43-fe6946db4294
+
+	column Id
+		dataType: int64
+		formatString: 0
+		lineageTag: cae27f1d-a11a-4caf-9514-114d2ba86ad3
+		summarizeBy: none
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Workout Type'
+		dataType: string
+		lineageTag: 953cee9b-c8bb-4a10-9139-cf8a3a42c370
+		summarizeBy: none
+		sourceColumn: Workout Type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Workout Type' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlDSUQoqzVOK1YlWMgSxE5NTwRwjIMcnPy9dASZrDBQIzy/Kzi8tUYqNBQA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Id = _t, #"Workout Type" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Id", Int64.Type}, {"Workout Type", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

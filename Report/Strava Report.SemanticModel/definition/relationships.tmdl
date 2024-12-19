@@ -1,0 +1,42 @@
+relationship 54d02fea-e897-c8c9-7b4b-6c5a35ef44d6
+	fromColumn: strava_activities.'Local Start Time'
+	toColumn: Time.Time
+
+relationship AutoDetected_6e95d645-5807-431e-a427-74d85d28c672
+	fromColumn: strava_activities.workout_type
+	toColumn: 'Workout Type'.Id
+
+relationship cd514271-d2d4-4124-9853-22ec31480408
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendar.Date
+	toColumn: LocalDateTable_d888f68e-757d-4514-9eeb-cb09be254f39.Date
+
+relationship e0330078-1cc4-48dc-bd4a-3c40df95cd6a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: strava_activities.'Start Date (Local)'
+	toColumn: LocalDateTable_586965cd-d908-441a-987b-2111ac5778fd.Date
+
+relationship 59c6cace-7151-2c4a-0bc2-2e007ca14bc0
+	fromColumn: strava_activities.Date
+	toColumn: Calendar.Date
+
+relationship 04cde49a-ac1d-4243-86ec-81cd4f246d25
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendar.'Week Beginning'
+	toColumn: LocalDateTable_fd5b1e45-db02-4ba7-87b4-bcc5475270f0.Date
+
+relationship dfe6708d-c2e1-4284-9b2a-5c0a6de3664f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Races.'Start Date (Local)'
+	toColumn: LocalDateTable_4fffd448-2a80-4187-b2fa-640521726540.Date
+
+relationship 6ecb7f3a-9d23-47ba-85d9-2058b33f0769
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Races.'Local Start Time'
+	toColumn: LocalDateTable_a3c7040c-13db-48b3-9be4-1290cb95674a.Date
+
+relationship 43d4e2f9-4bad-466e-9f3f-de34262a8bc7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Races.Date
+	toColumn: LocalDateTable_3a5a615d-5dc5-45ef-8d17-a58f3db14430.Date
+
