@@ -376,6 +376,14 @@ table Races
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Avg. Mile Pace'
+		lineageTag: f08c371a-73a7-4e87-9d1a-33d4d859d59d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: strava_activities[Avg. Mile Pace]
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Races = calculated
 		mode: import
 		source = ```

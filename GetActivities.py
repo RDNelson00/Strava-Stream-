@@ -94,6 +94,23 @@ def fetch_activities(access_token, activities_url, per_page=200, after=None):
     print(f"Total activities retrieved: {len(all_activities)}")
     return all_activities
 
+def min_per_mile(all_activities):
+    """Calculate the average pace in minutes per mile for all activities and add it to each activity."""
+    for activity in all_activities:
+        if activity['sport_type'] == 'Run' and activity['moving_time'] > 0:
+            distance_miles = activity['distance'] * 0.000621371  # Convert meters to miles
+            time_minutes = activity['moving_time'] / 60  # Convert seconds to minutes
+            pace = time_minutes / distance_miles  # Calculate pace in minutes per mile
+
+            # Convert pace to mm:ss format
+            minutes = int(pace)
+            seconds = int((pace - minutes) * 60)
+            pace_formatted = f"{minutes:02d}:{seconds:02d}"
+
+            activity['min_per_mile'] = pace_formatted  # Add formatted pace to activity record
+
+    return all_activities
+    
 
 def save_activities_to_csv(activities, filename="strava_activities.csv"):
     """Save activities to a CSV file."""
@@ -154,6 +171,8 @@ def main():
 
         # Fetch activities incrementally
         activities = fetch_activities(access_token, activities_url, after=last_fetched_datetime)
+        #Now add the mile pace
+        activities = min_per_mile(activities)
         
 
         if activities:
