@@ -363,7 +363,7 @@ table strava_activities
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\rnelson\OneDrive - Curant Health\Documents\Strava\strava_activities.csv"),[Delimiter=",", Columns=55, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("C:\Strava-Stream-\strava_activities.csv"),[Delimiter=",", Columns=55, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"resource_state", Int64.Type}, {"athlete", type text}, {"name", type text}, {"distance", type number}, {"moving_time", Int64.Type}, {"elapsed_time", Int64.Type}, {"total_elevation_gain", type number}, {"type", type text}, {"sport_type", type text}, {"id", Int64.Type}, {"start_date", type datetime}, {"start_date_local", type datetime}, {"timezone", type text}, {"utc_offset", Int64.Type}, {"location_city", type text}, {"location_state", type text}, {"location_country", type text}, {"achievement_count", Int64.Type}, {"kudos_count", Int64.Type}, {"comment_count", Int64.Type}, {"athlete_count", Int64.Type}, {"photo_count", Int64.Type}, {"map", type text}, {"trainer", type logical}, {"commute", type logical}, {"manual", type logical}, {"private", type logical}, {"visibility", type text}, {"flagged", type logical}, {"gear_id", type text}, {"start_latlng", type text}, {"end_latlng", type text}, {"average_speed", type number}, {"max_speed", type number}, {"has_heartrate", type logical}, {"average_heartrate", type number}, {"max_heartrate", Int64.Type}, {"heartrate_opt_out", type logical}, {"display_hide_heartrate_option", type logical}, {"elev_high", type number}, {"elev_low", type number}, {"upload_id", Int64.Type}, {"upload_id_str", Int64.Type}, {"external_id", type text}, {"from_accepted_tag", type logical}, {"pr_count", Int64.Type}, {"total_photo_count", Int64.Type}, {"has_kudoed", type logical}, {"suffer_score", Int64.Type}, {"workout_type", Int64.Type}, {"average_cadence", type number}, {"average_watts", type number}, {"device_watts", type logical}, {"kilojoules", Int64.Type}, {"average_temp", type text}}),
 				    #"Inserted Text Between Delimiters" = Table.AddColumn(#"Changed Type", "Start Lat", each Text.BetweenDelimiters([start_latlng], "[", ","), type text),
@@ -385,7 +385,7 @@ table strava_activities
 				in
 				    #"Renamed Columns3"
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
 	annotation PBI_NavigationStepName = Navigation
 
