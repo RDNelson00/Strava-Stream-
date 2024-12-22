@@ -4588,6 +4588,48 @@ cultureInfo en-US
 			        }
 			      ],
 			      "NameType": "Name"
+			    },
+			    "races.race_distance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Races",
+			          "ConceptualProperty": "Race Distance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Race": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "races.web_link_to_activity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Races",
+			          "ConceptualProperty": "Web Link to Activity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Link": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
