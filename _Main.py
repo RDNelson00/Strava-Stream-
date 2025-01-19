@@ -8,7 +8,7 @@ import os
 from dotenv import load_dotenv
 
 
-token_file = 'strava_tokens.json'
+token_file = os.getenv('token_file')
 
 # Function to check if th e user has granted authorization
 def is_authorized():

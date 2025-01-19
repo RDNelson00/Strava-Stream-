@@ -5,9 +5,11 @@ import json
 from dotenv import load_dotenv
 import os
 
-token_file = 'strava_tokens.json' 
-activities_url = "https://www.strava.com/api/v3/athlete/activities"
-last_fetched_file = 'last_fetched.json'  # File to store the timestamp of the last fetched activity
+ # File to store the timestamp of the last fetched activity
+token_file = os.getenv('token_file')
+activities_url = os.getenv('activities_url')
+last_fetched_file = os.getenv('last_fetched_file')
+
 
 def get_access_token():
     """Retrieve the Strava API access token from a file."""
@@ -151,15 +153,8 @@ def save_activities_to_csv(activities, filename="strava_activities.csv"):
         # After saving, make the file read-only
         os.chmod(filename, 0o444)  # Read-only permission for the file (Owner, Group, Others)
 
-
-
-
-
-
-
-
-
 def main():
+    
     # Get the access token
     access_token = get_access_token()
 
