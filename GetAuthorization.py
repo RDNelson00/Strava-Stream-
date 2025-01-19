@@ -3,6 +3,14 @@ import webbrowser
 from urllib.parse import urlencode, urlparse, parse_qs
 from dotenv import load_dotenv
 
+# Load the environment variables
+load_dotenv()
+#set the variables
+base_url = os.getenv("base_url")
+client_id = os.getenv("client_id")
+redirect_uri = os.getenv("redirect_URI")
+scope = os.getenv("scope", "read")  # Default to 'read' if not specified
+
 #first go get the parameters from the env var file
 def build_params():
     """
@@ -12,13 +20,10 @@ def build_params():
     Raises:
         ValueError if any required environment variable is missing.
     """
-    load_dotenv()
     
     
         
-    client_id = os.getenv("client_id")
-    redirect_uri = os.getenv("redirect_URI")
-    scope = os.getenv("scope", "read")  # Default to 'read' if not specified
+
     
     if not client_id or not redirect_uri:
         raise ValueError("Missing required environment variables.")
@@ -28,7 +33,7 @@ def build_params():
 
 # next Generate the authorization URL
 def generate_auth_url(client_id, redirect_uri, scope):
-    base_url = "https://www.strava.com/oauth/authorize"
+
     
     # Prepare the parameters
     params = {

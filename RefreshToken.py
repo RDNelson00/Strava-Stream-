@@ -2,10 +2,12 @@ import requests
 import pandas as pd
 import time
 import json  # Import json for reading/writing JSON files
-from GetToken import load_env_variables
 import os
-# File to store the access token and refresh token
+from dotenv import load_dotenv
 
+# Load the environment variables
+load_dotenv()
+# File to store the access token and refresh token
 token_file = os.getenv('token_file')
 token_file = os.getenv('token_file')
 client_id = os.getenv('client_id')

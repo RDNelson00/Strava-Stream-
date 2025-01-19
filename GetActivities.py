@@ -3,6 +3,10 @@ from datetime import datetime
 import pandas as pd
 import json
 import os
+from dotenv import load_dotenv
+
+# Load the environment variables
+load_dotenv()
 
  # File to store the timestamp of the last fetched activity
 token_file = os.getenv('token_file')

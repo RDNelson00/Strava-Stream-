@@ -7,13 +7,14 @@ import GetToken
 import os
 from dotenv import load_dotenv
 
+# Load the environment variables
+load_dotenv()
 
 token_file = os.getenv('token_file')
+auth_code = os.getenv("auth_code")  # Check for auth_code in .env
 
 # Function to check if th e user has granted authorization
 def is_authorized():
-    load_dotenv()
-    auth_code = os.getenv("auth_code")  # Check for auth_code in .env
     return auth_code is not None
     
 
