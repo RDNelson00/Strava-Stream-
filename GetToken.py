@@ -5,30 +5,18 @@ import os
 import json  # Import json for reading/writing JSON files
 from dotenv import load_dotenv
 
-def load_env_variables():
-    
-    load_dotenv()
-    client_id = os.getenv("client_id")
-    client_secret = os.getenv("client_secret")
-    auth_code = os.getenv("auth_code")
-    if not client_id or not client_secret or not auth_code:
-        raise Exception("Missing one or more required environment variables.")
-    else:
-        return client_id, client_secret, auth_code  
-    
+# Load the environment variables
+load_dotenv()
 
+token_url = os.getenv('token_url')
+token_file = os.getenv('token_file')
+client_id = os.getenv('client_id')
+client_secret = os.getenv('client_secret')
+auth_code = os.getenv('auth_code')
 
 # Refresh token function
 def get_token(client_id, client_secret, auth_code):
-    #where the tokens are stored
-    token_file = "strava_tokens.json"
-    
-    #authentication URL
-    token_url = "https://www.strava.com/oauth/token"
-
-
-
-    
+   
     # Payload with credentials and refresh token
     payload = {
         'client_id': client_id,
@@ -62,8 +50,6 @@ def get_token(client_id, client_secret, auth_code):
         raise Exception("Failed to refresh token:", data)
 
 def main():
-    # Load environment variables
-    client_id, client_secret, auth_code = load_env_variables()
 
     # Get the access token
     access_token = get_token(client_id, client_secret, auth_code)
