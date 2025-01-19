@@ -3,13 +3,17 @@ import pandas as pd
 import time
 import json  # Import json for reading/writing JSON files
 from GetToken import load_env_variables
-
+import os
 # File to store the access token and refresh token
 
-
+token_file = os.getenv('token_file')
+token_file = os.getenv('token_file')
+client_id = os.getenv('client_id')
+client_secret = os.getenv('client_secret')
+token_url = os.getenv('token_url')
 
 def get_refresh_token():
-    token_file = "strava_tokens.json"
+
     with open(token_file, 'r') as f:
         tokens = json.load(f)
         refresh_token = tokens.get('refresh_token')  # Extract the refresh token
@@ -18,12 +22,7 @@ def get_refresh_token():
 
 # Get the new access token using the refresh token
 def get_token(refresh_token, token_file):
-    
-    client_id, client_secret, auth_code = load_env_variables()
 
-    # Endpoint for refreshing the token
-    token_url = "https://www.strava.com/oauth/token"
-    
     # Payload with credentials and refresh token
     payload = {
         'client_id': client_id,

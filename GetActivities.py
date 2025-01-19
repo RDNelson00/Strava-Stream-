@@ -2,7 +2,6 @@ import requests
 from datetime import datetime
 import pandas as pd
 import json
-from dotenv import load_dotenv
 import os
 
  # File to store the timestamp of the last fetched activity
