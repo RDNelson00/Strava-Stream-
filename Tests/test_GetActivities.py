@@ -1,6 +1,13 @@
+import sys
+import os
 import unittest
 
-from GetActivities import get_access_token, get_last_fetched_datetime, save_last_fetched_datetime
+# Add the parent directory to sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+import unittest
+
+from StravaStream.GetActivities import get_access_token, get_last_fetched_datetime
 
 #we're creating a test class that inherits from unittest.TestCase
 class TestClass(unittest.TestCase):
