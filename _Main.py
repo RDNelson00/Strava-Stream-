@@ -1,11 +1,16 @@
 import json
 from datetime import datetime, timezone
-import RefreshToken
-import GetActivities
-import GetAuthorization
-import GetToken
+import StravaStream.RefreshToken
+import  StravaStream.GetActivities
+import  StravaStream.GetAuthorization
+import  StravaStream.GetToken
 import os
 from dotenv import load_dotenv
+import sys
+import os
+
+# Add the parent directory to sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Load the environment variables
 load_dotenv()
@@ -25,7 +30,7 @@ def get_token_expiry():
             return tokens.get('expires_at')  # Extract the refresh token
     except:         
         print("Token file not found. Getting tokens.")
-        GetToken.main()
+        StravaStream.GetToken.main()
 
 print(f"Auth code from environment: {os.getenv('auth_code')}")
 
@@ -33,11 +38,11 @@ print(f"Auth code from environment: {os.getenv('auth_code')}")
 # Main Logic
 if not is_authorized():
     print("Authorization not found. Starting the authorization flow...")
-    GetAuthorization.main()
+    StravaStream.GetAuthorization.main()
     print("Starting token flow")
-    GetToken.main()
+    StravaStream.GetToken.main()
     print("Fetching activities.")
-    GetActivities.main()
+    StravaStream.GetActivities.main()
 
 
 else:
@@ -52,12 +57,12 @@ else:
         # Refresh the token if expired
         if expiry < datetime.now(timezone.utc):
             print("Token is expired. Refreshing...")
-            RefreshToken.main()
-            GetActivities.main() 
+            StravaStream.RefreshToken.main()
+            StravaStream.GetActivities.main() 
   
         else:
             print("Token is valid. Fetching activities...")
-            GetActivities.main() 
+            StravaStream.GetActivities.main() 
     else:
         print("Token file not found or invalid. Starting the authorization flow...")
-        GetAuthorization.main()
+        StravaStream.GetAuthorization.main()
